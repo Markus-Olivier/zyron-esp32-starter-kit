@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" width="480" height="280">
+  <rect width="480" height="280" fill="#0f0f1a"/>
+
+  <!-- ESP32 -->
+  <rect x="30" y="50" width="80" height="170" rx="5" fill="#1a6b1a" stroke="#2d8a2d" stroke-width="1.5"/>
+  <text x="70" y="70" font-family="monospace" font-size="9" fill="#fff" text-anchor="middle" font-weight="bold">ESP32</text>
+  <rect x="108" y="80"  width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="108" y="100" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="108" y="120" width="12" height="7" rx="1" fill="#d4af37"/>
+  <text x="106" y="87"  font-family="monospace" font-size="7.5" fill="#e94560" text-anchor="end">5V VIN</text>
+  <text x="106" y="107" font-family="monospace" font-size="7.5" fill="#aaffaa" text-anchor="end">GPIO13</text>
+  <text x="106" y="127" font-family="monospace" font-size="7.5" fill="#5599ff" text-anchor="end">GND</text>
+
+  <!-- PIR sensor -->
+  <!-- PCB -->
+  <rect x="330" y="100" width="120" height="80" rx="5" fill="#cc6600" stroke="#ee8800" stroke-width="1.5"/>
+  <!-- Dome -->
+  <ellipse cx="390" cy="100" rx="44" ry="44" fill="#f0f0f0" stroke="#ccc" stroke-width="2"/>
+  <ellipse cx="390" cy="100" rx="36" ry="36" fill="#e8e8e8"/>
+  <ellipse cx="390" cy="100" rx="24" ry="24" fill="none" stroke="#ccc" stroke-width="1"/>
+  <ellipse cx="390" cy="100" rx="12" ry="12" fill="none" stroke="#ccc" stroke-width="1"/>
+  <text x="390" y="60" font-family="monospace" font-size="8" fill="#555" text-anchor="middle">PIR</text>
+
+  <!-- Pots -->
+  <circle cx="350" cy="148" r="8" fill="#333" stroke="#666"/>
+  <circle cx="410" cy="148" r="8" fill="#333" stroke="#666"/>
+
+  <!-- Pins -->
+  <rect x="342" y="180" width="7" height="22" rx="1" fill="#aaa"/>
+  <rect x="387" y="180" width="7" height="22" rx="1" fill="#aaa"/>
+  <rect x="432" y="180" width="7" height="22" rx="1" fill="#aaa"/>
+  <text x="345" y="214" font-family="monospace" font-size="8" fill="#e94560" text-anchor="middle">VCC</text>
+  <text x="390" y="214" font-family="monospace" font-size="8" fill="#aaffaa" text-anchor="middle">OUT</text>
+  <text x="435" y="214" font-family="monospace" font-size="8" fill="#5599ff" text-anchor="middle">GND</text>
+
+  <!-- Wires -->
+  <!-- 5V → VCC (red) -->
+  <polyline points="120,83 220,83 220,50 345,50 345,180" fill="none" stroke="#e94560" stroke-width="2.5"/>
+  <!-- GPIO13 → OUT (green) -->
+  <polyline points="120,103 390,103 390,180" fill="none" stroke="#aaffaa" stroke-width="2.5"/>
+  <!-- GND (blue) -->
+  <polyline points="120,123 240,123 240,225 435,225 435,202" fill="none" stroke="#5599ff" stroke-width="2.5"/>
+
+  <!-- Note: 3.3V safe output -->
+  <rect x="240" y="103" width="80" height="18" rx="3" fill="#1a5a1a" stroke="#2a8a2a"/>
+  <text x="280" y="115" font-family="monospace" font-size="7.5" fill="#aaffaa" text-anchor="middle">3.3V output ✓</text>
+  <text x="280" y="127" font-family="monospace" font-size="7" fill="#888" text-anchor="middle">no divider needed</text>
+
+  <!-- Warm-up warning -->
+  <rect x="30" y="240" width="420" height="28" rx="4" fill="#1a1a2e" stroke="#ffcc00" stroke-width="1"/>
+  <text x="240" y="252" font-family="sans-serif" font-size="9" fill="#ffcc00" text-anchor="middle" font-weight="bold">⚠ Allow 30–60 seconds warm-up after power-on before first detection</text>
+  <text x="240" y="264" font-family="monospace" font-size="8" fill="#888" text-anchor="middle">PIR VCC → 5V  |  OUT → GPIO 13  |  GND → GND</text>
+
+  <!-- Title -->
+  <text x="240" y="20" font-family="sans-serif" font-size="11" fill="#e94560" text-anchor="middle" font-weight="bold">HC-SR501 PIR Wiring — Zyron ESP32 Starter Kit</text>
+  <text x="240" y="34" font-family="sans-serif" font-size="9" fill="#888" text-anchor="middle">zyron.co.za</text>
+</svg>

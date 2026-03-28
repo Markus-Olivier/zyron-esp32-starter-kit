@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 320" width="520" height="320">
+  <rect width="520" height="320" fill="#0f0f1a"/>
+
+  <!-- ESP32 -->
+  <rect x="30" y="50" width="80" height="200" rx="5" fill="#1a6b1a" stroke="#2d8a2d" stroke-width="1.5"/>
+  <text x="70" y="70" font-family="monospace" font-size="9" fill="#fff" text-anchor="middle" font-weight="bold">ESP32</text>
+  <rect x="108" y="80"  width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="108" y="100" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="108" y="120" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="108" y="140" width="12" height="7" rx="1" fill="#d4af37"/>
+  <text x="106" y="87"  font-family="monospace" font-size="7" fill="#e94560" text-anchor="end">5V VIN</text>
+  <text x="106" y="107" font-family="monospace" font-size="7" fill="#ffcc00" text-anchor="end">GPIO5</text>
+  <text x="106" y="127" font-family="monospace" font-size="7" fill="#ff8800" text-anchor="end">GPIO18</text>
+  <text x="106" y="147" font-family="monospace" font-size="7" fill="#5599ff" text-anchor="end">GND</text>
+
+  <!-- HC-SR04 -->
+  <rect x="360" y="60" width="130" height="80" rx="5" fill="#1a4a8a" stroke="#2a6aaa" stroke-width="1.5"/>
+  <ellipse cx="400" cy="100" rx="22" ry="22" fill="#888"/>
+  <ellipse cx="400" cy="100" rx="14" ry="14" fill="#555"/>
+  <ellipse cx="450" cy="100" rx="22" ry="22" fill="#888"/>
+  <ellipse cx="450" cy="100" rx="14" ry="14" fill="#555"/>
+  <text x="425" y="75" font-family="monospace" font-size="8" fill="#fff" text-anchor="middle">HC-SR04</text>
+  <!-- Sensor pins -->
+  <rect x="372" y="140" width="7" height="22" rx="1" fill="#aaa"/>
+  <rect x="392" y="140" width="7" height="22" rx="1" fill="#aaa"/>
+  <rect x="412" y="140" width="7" height="22" rx="1" fill="#aaa"/>
+  <rect x="432" y="140" width="7" height="22" rx="1" fill="#aaa"/>
+  <text x="375" y="175" font-family="monospace" font-size="8" fill="#e94560" text-anchor="middle">VCC</text>
+  <text x="395" y="175" font-family="monospace" font-size="8" fill="#ffcc00" text-anchor="middle">TRIG</text>
+  <text x="415" y="175" font-family="monospace" font-size="8" fill="#ff8800" text-anchor="middle">ECHO</text>
+  <text x="435" y="175" font-family="monospace" font-size="8" fill="#5599ff" text-anchor="middle">GND</text>
+  <text x="415" y="186" font-family="monospace" font-size="7" fill="#cc3300" text-anchor="middle">5V out!</text>
+
+  <!-- Voltage divider resistors -->
+  <!-- 1kΩ -->
+  <rect x="270" y="122" width="48" height="16" rx="6" fill="#d4a847"/>
+  <rect x="275" y="122" width="7" height="16" rx="1" fill="#8B4513"/>
+  <rect x="286" y="122" width="7" height="16" rx="1" fill="#111"/>
+  <rect x="297" y="122" width="7" height="16" rx="1" fill="#cc0000"/>
+  <rect x="310" y="122" width="7" height="16" rx="1" fill="#d4af37"/>
+  <text x="294" y="115" font-family="monospace" font-size="8" fill="#ffcc00" text-anchor="middle">1kΩ</text>
+
+  <!-- 2kΩ -->
+  <rect x="310" y="155" width="48" height="16" rx="6" fill="#d4a847" transform="rotate(90, 334, 163)"/>
+  <rect x="330" y="148" width="16" height="7" rx="1" fill="#cc0000" transform="rotate(90, 338, 155)"/>
+  <rect x="330" y="162" width="16" height="7" rx="1" fill="#111" transform="rotate(90, 338, 165)"/>
+  <!-- Simpler vertical resistor -->
+  <rect x="326" y="148" width="16" height="48" rx="6" fill="#d4a847"/>
+  <rect x="326" y="154" width="16" height="7" rx="1" fill="#cc0000"/>
+  <rect x="326" y="165" width="16" height="7" rx="1" fill="#111"/>
+  <rect x="326" y="176" width="16" height="7" rx="1" fill="#cc0000"/>
+  <rect x="326" y="187" width="16" height="7" rx="1" fill="#d4af37"/>
+  <text x="334" y="143" font-family="monospace" font-size="8" fill="#ffcc00" text-anchor="middle">2kΩ</text>
+
+  <!-- Wires -->
+  <!-- 5V VIN → VCC (red) -->
+  <polyline points="120,83 375,83 375,140" fill="none" stroke="#e94560" stroke-width="2.5"/>
+  <!-- TRIG GPIO5 → TRIG (yellow) -->
+  <polyline points="120,103 395,103 395,140" fill="none" stroke="#ffcc00" stroke-width="2.5"/>
+  <!-- ECHO via divider (orange) -->
+  <polyline points="415,140 415,130 318,130" fill="none" stroke="#ff8800" stroke-width="2.5"/>
+  <!-- 1kΩ left → GPIO18 -->
+  <polyline points="270,130 120,130 120,123" fill="none" stroke="#ff8800" stroke-width="2.5"/>
+  <!-- junction at GPIO18 -->
+  <circle cx="334" cy="130" r="4" fill="#ff8800"/>
+  <!-- 2kΩ down from junction to GND bus -->
+  <polyline points="334,130 334,148" fill="none" stroke="#ff8800" stroke-width="2.5"/>
+  <polyline points="334,196 334,215 435,215 435,162" fill="none" stroke="#5599ff" stroke-width="2"/>
+  <!-- GND (blue) -->
+  <polyline points="120,143 240,143 240,215 435,215 435,162" fill="none" stroke="#5599ff" stroke-width="2.5"/>
+
+  <!-- Voltage divider box/label -->
+  <rect x="250" y="108" width="100" height="100" rx="4" fill="none" stroke="#ffcc00" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="300" y="222" font-family="monospace" font-size="8" fill="#ffcc00" text-anchor="middle">Voltage Divider</text>
+  <text x="300" y="232" font-family="monospace" font-size="8" fill="#888" text-anchor="middle">5V → 3.3V</text>
+
+  <!-- Warning -->
+  <rect x="30" y="272" width="460" height="36" rx="4" fill="#cc3300" opacity="0.2" stroke="#cc3300" stroke-width="1"/>
+  <text x="260" y="285" font-family="sans-serif" font-size="9" fill="#ffaaaa" text-anchor="middle" font-weight="bold">⚠ HC-SR04 ECHO outputs 5V — ESP32 GPIO max is 3.3V</text>
+  <text x="260" y="299" font-family="sans-serif" font-size="9" fill="#aaa" text-anchor="middle">Always use the 1kΩ + 2kΩ voltage divider on the ECHO pin</text>
+
+  <!-- Title -->
+  <text x="260" y="20" font-family="sans-serif" font-size="11" fill="#e94560" text-anchor="middle" font-weight="bold">HC-SR04 Wiring with Voltage Divider — Zyron ESP32 Starter Kit</text>
+  <text x="260" y="35" font-family="sans-serif" font-size="9" fill="#888" text-anchor="middle">zyron.co.za</text>
+</svg>

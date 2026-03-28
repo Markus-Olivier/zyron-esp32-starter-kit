@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480">
+  <rect width="640" height="480" fill="#0f0f1a"/>
+
+  <!-- Title -->
+  <text x="320" y="24" font-family="sans-serif" font-size="13" fill="#e94560" text-anchor="middle" font-weight="bold">ESP32 DevKit — Annotated Pinout</text>
+  <text x="320" y="40" font-family="sans-serif" font-size="9" fill="#888" text-anchor="middle">zyron.co.za · Zyron ESP32 Starter Kit</text>
+
+  <!-- PCB body -->
+  <rect x="200" y="55" width="240" height="380" rx="10" fill="#1a6b1a" stroke="#2d8a2d" stroke-width="2"/>
+
+  <!-- USB -->
+  <rect x="265" y="46" width="70" height="20" rx="4" fill="#888" stroke="#aaa" stroke-width="1.5"/>
+  <text x="300" y="59" font-family="monospace" font-size="7" fill="#ccc" text-anchor="middle">Micro USB</text>
+
+  <!-- EN / BOOT buttons -->
+  <rect x="210" y="74" width="22" height="11" rx="3" fill="#cc3333" stroke="#ff5555"/>
+  <text x="221" y="82" font-family="monospace" font-size="6.5" fill="#fff" text-anchor="middle">EN</text>
+  <rect x="368" y="74" width="30" height="11" rx="3" fill="#333399" stroke="#5555ff"/>
+  <text x="383" y="82" font-family="monospace" font-size="6.5" fill="#fff" text-anchor="middle">BOOT</text>
+
+  <!-- Antenna -->
+  <rect x="255" y="90" width="90" height="50" rx="3" fill="#1a8a1a" stroke="#2d8a2d"/>
+  <text x="300" y="120" font-family="monospace" font-size="8" fill="#5f5" text-anchor="middle">PCB Antenna</text>
+
+  <!-- Chip -->
+  <rect x="230" y="165" width="140" height="90" rx="4" fill="#222" stroke="#444" stroke-width="1.5"/>
+  <text x="300" y="208" font-family="monospace" font-size="9" fill="#aaa" text-anchor="middle" font-weight="bold">ESP32-WROOM-32</text>
+  <text x="300" y="222" font-family="monospace" font-size="7" fill="#666" text-anchor="middle">Dual-core Xtensa LX6</text>
+  <text x="300" y="233" font-family="monospace" font-size="7" fill="#666" text-anchor="middle">240MHz · 4MB Flash</text>
+
+  <!-- Power LED -->
+  <circle cx="250" cy="158" r="5" fill="#00cc00"/>
+  <text x="250" y="152" font-family="monospace" font-size="7" fill="#5f5" text-anchor="middle">PWR</text>
+
+  <!-- Left pin rows (19 pins, 20px pitch) -->
+  <rect x="188" y="99"  width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="188" y="119" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="188" y="139" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="188" y="159" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="188" y="179" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="188" y="199" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="188" y="219" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="188" y="239" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="188" y="259" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="188" y="279" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="188" y="299" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="188" y="319" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="188" y="339" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="188" y="359" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="188" y="379" width="12" height="7" rx="1" fill="#d4af37"/>
+
+  <!-- Right pin rows -->
+  <rect x="400" y="99"  width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="400" y="119" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="400" y="139" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="400" y="159" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="400" y="179" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="400" y="199" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="400" y="219" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="400" y="239" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="400" y="259" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="400" y="279" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="400" y="299" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="400" y="319" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="400" y="339" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="400" y="359" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="400" y="379" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="400" y="399" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="400" y="419" width="12" height="7" rx="1" fill="#d4af37"/>
+
+  <!-- Left annotation lines + labels -->
+  <!-- 3.3V -->
+  <line x1="188" y1="102" x2="150" y2="102" stroke="#e94560" stroke-width="1"/>
+  <line x1="150" y1="102" x2="80" y2="102" stroke="#e94560" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="78" y="105" font-family="monospace" font-size="8" fill="#e94560" text-anchor="end">3.3V ●</text>
+
+  <!-- GND -->
+  <line x1="188" y1="122" x2="80" y2="122" stroke="#5599ff" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="78" y="125" font-family="monospace" font-size="8" fill="#5599ff" text-anchor="end">GND ●</text>
+
+  <!-- D15 -->
+  <line x1="188" y1="142" x2="80" y2="142" stroke="#888" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="78" y="145" font-family="monospace" font-size="8" fill="#aaa" text-anchor="end">D15</text>
+
+  <!-- D2 -->
+  <line x1="188" y1="162" x2="80" y2="162" stroke="#888" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="78" y="165" font-family="monospace" font-size="8" fill="#aaa" text-anchor="end">D2</text>
+
+  <!-- D4 -->
+  <line x1="188" y1="182" x2="80" y2="182" stroke="#888" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="78" y="185" font-family="monospace" font-size="8" fill="#aaa" text-anchor="end">D4</text>
+
+  <!-- RX2 -->
+  <line x1="188" y1="202" x2="80" y2="202" stroke="#ffcc00" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="78" y="205" font-family="monospace" font-size="8" fill="#ffcc00" text-anchor="end">RX2 (UART2)</text>
+
+  <!-- TX2 -->
+  <line x1="188" y1="222" x2="80" y2="222" stroke="#ffcc00" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="78" y="225" font-family="monospace" font-size="8" fill="#ffcc00" text-anchor="end">TX2 (UART2)</text>
+
+  <!-- D21 SDA -->
+  <line x1="188" y1="302" x2="80" y2="302" stroke="#aaffaa" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="78" y="305" font-family="monospace" font-size="8" fill="#aaffaa" text-anchor="end">D21 SDA (I2C)</text>
+
+  <!-- D22 SCL -->
+  <line x1="188" y1="362" x2="80" y2="362" stroke="#aaffaa" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="78" y="365" font-family="monospace" font-size="8" fill="#aaffaa" text-anchor="end">D22 SCL (I2C)</text>
+
+  <!-- Right annotation lines + labels -->
+  <!-- VIN 5V -->
+  <line x1="412" y1="102" x2="560" y2="102" stroke="#e94560" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="562" y="105" font-family="monospace" font-size="8" fill="#e94560" text-anchor="start">● VIN (5V in)</text>
+
+  <!-- GND -->
+  <line x1="412" y1="122" x2="560" y2="122" stroke="#5599ff" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="562" y="125" font-family="monospace" font-size="8" fill="#5599ff" text-anchor="start">● GND</text>
+
+  <!-- D34 ADC1 -->
+  <line x1="412" y1="142" x2="560" y2="142" stroke="#ff8800" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="562" y="145" font-family="monospace" font-size="8" fill="#ff8800" text-anchor="start">● D34 (ADC1 input only)</text>
+
+  <!-- D35 ADC1 -->
+  <line x1="412" y1="162" x2="560" y2="162" stroke="#ff8800" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="562" y="165" font-family="monospace" font-size="8" fill="#ff8800" text-anchor="start">● D35 (ADC1 input only)</text>
+
+  <!-- D32 ADC1 -->
+  <line x1="412" y1="182" x2="560" y2="182" stroke="#ff8800" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="562" y="185" font-family="monospace" font-size="8" fill="#ff8800" text-anchor="start">● D32 (ADC1)</text>
+
+  <!-- D33 ADC1 -->
+  <line x1="412" y1="202" x2="560" y2="202" stroke="#ff8800" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="562" y="205" font-family="monospace" font-size="8" fill="#ff8800" text-anchor="start">● D33 (ADC1)</text>
+
+  <!-- D26 -->
+  <line x1="412" y1="242" x2="560" y2="242" stroke="#aaa" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="562" y="245" font-family="monospace" font-size="8" fill="#aaa" text-anchor="start">● D26</text>
+
+  <!-- D13 -->
+  <line x1="412" y1="322" x2="560" y2="322" stroke="#aaa" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="562" y="325" font-family="monospace" font-size="8" fill="#aaa" text-anchor="start">● D13</text>
+
+  <!-- Legend -->
+  <rect x="20" y="440" width="600" height="30" rx="4" fill="#1a1a2e" stroke="#333"/>
+  <rect x="28" y="450" width="10" height="10" rx="2" fill="#e94560"/>
+  <text x="44" y="458" font-family="monospace" font-size="8" fill="#e94560">Power</text>
+  <rect x="100" y="450" width="10" height="10" rx="2" fill="#5599ff"/>
+  <text x="116" y="458" font-family="monospace" font-size="8" fill="#5599ff">GND</text>
+  <rect x="160" y="450" width="10" height="10" rx="2" fill="#ff8800"/>
+  <text x="176" y="458" font-family="monospace" font-size="8" fill="#ff8800">ADC1 (safe with WiFi)</text>
+  <rect x="340" y="450" width="10" height="10" rx="2" fill="#aaffaa"/>
+  <text x="356" y="458" font-family="monospace" font-size="8" fill="#aaffaa">I2C (SDA/SCL)</text>
+  <rect x="460" y="450" width="10" height="10" rx="2" fill="#ffcc00"/>
+  <text x="476" y="458" font-family="monospace" font-size="8" fill="#ffcc00">UART</text>
+</svg>

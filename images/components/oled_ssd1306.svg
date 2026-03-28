@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="320" height="220">
+  <rect width="320" height="220" fill="#1a1a2e"/>
+
+  <!-- PCB -->
+  <rect x="70" y="40" width="180" height="120" rx="5" fill="#1a1a8a" stroke="#3333cc" stroke-width="2"/>
+
+  <!-- Display area (black OLED panel) -->
+  <rect x="82" y="50" width="156" height="82" rx="3" fill="#000" stroke="#333" stroke-width="1"/>
+
+  <!-- Simulated OLED content -->
+  <!-- Zyron text on display -->
+  <text x="160" y="78" font-family="monospace" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">Zyron ESP32 Kit</text>
+  <line x1="90" y1="85" x2="230" y2="85" stroke="#444" stroke-width="0.5"/>
+  <text x="160" y="97" font-family="monospace" font-size="8" fill="#cccccc" text-anchor="middle">Temp:  23.4 C</text>
+  <text x="160" y="108" font-family="monospace" font-size="8" fill="#cccccc" text-anchor="middle">Hum:   56.2 %</text>
+  <text x="160" y="119" font-family="monospace" font-size="8" fill="#888888" text-anchor="middle">zyron.co.za</text>
+
+  <!-- Pins -->
+  <rect x="86" y="160" width="8" height="26" rx="1" fill="#aaa"/>
+  <rect x="106" y="160" width="8" height="26" rx="1" fill="#aaa"/>
+  <rect x="126" y="160" width="8" height="26" rx="1" fill="#aaa"/>
+  <rect x="146" y="160" width="8" height="26" rx="1" fill="#aaa"/>
+
+  <!-- Pin labels -->
+  <text x="90"  y="198" font-family="monospace" font-size="9" fill="#e94560" text-anchor="middle">VCC</text>
+  <text x="110" y="198" font-family="monospace" font-size="9" fill="#5599ff" text-anchor="middle">GND</text>
+  <text x="130" y="198" font-family="monospace" font-size="9" fill="#ffcc00" text-anchor="middle">SCL</text>
+  <text x="150" y="198" font-family="monospace" font-size="9" fill="#aaffaa" text-anchor="middle">SDA</text>
+
+  <!-- GPIO labels -->
+  <text x="130" y="209" font-family="monospace" font-size="8" fill="#888" text-anchor="middle">GPIO22</text>
+  <text x="150" y="209" font-family="monospace" font-size="8" fill="#888" text-anchor="middle">GPIO21</text>
+
+  <!-- I2C label -->
+  <text x="220" y="180" font-family="monospace" font-size="9" fill="#ffcc00" text-anchor="middle">I²C</text>
+  <text x="220" y="192" font-family="monospace" font-size="8" fill="#888" text-anchor="middle">addr 0x3C</text>
+
+  <!-- Title -->
+  <text x="160" y="15" font-family="sans-serif" font-size="10" fill="#e94560" text-anchor="middle" font-weight="bold">SSD1306 OLED Display 0.96" — zyron.co.za</text>
+  <text x="160" y="28" font-family="sans-serif" font-size="9" fill="#888" text-anchor="middle">128×64 px · I²C · 3.3V · No backlight needed</text>
+</svg>

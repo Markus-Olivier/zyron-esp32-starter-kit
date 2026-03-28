@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" width="480" height="280">
+  <rect width="480" height="280" fill="#0f0f1a"/>
+
+  <!-- ESP32 -->
+  <rect x="30" y="50" width="80" height="160" rx="5" fill="#1a6b1a" stroke="#2d8a2d" stroke-width="1.5"/>
+  <text x="70" y="70" font-family="monospace" font-size="9" fill="#fff" text-anchor="middle" font-weight="bold">ESP32</text>
+  <rect x="108" y="80"  width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="108" y="100" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="108" y="120" width="12" height="7" rx="1" fill="#d4af37"/>
+  <text x="106" y="87"  font-family="monospace" font-size="7.5" fill="#e94560" text-anchor="end">3.3V</text>
+  <text x="106" y="107" font-family="monospace" font-size="7.5" fill="#ffcc00" text-anchor="end">GPIO34</text>
+  <text x="106" y="127" font-family="monospace" font-size="7.5" fill="#5599ff" text-anchor="end">GND</text>
+
+  <!-- LDR component -->
+  <ellipse cx="310" cy="100" rx="40" ry="40" fill="#d4b030" stroke="#c0a020" stroke-width="2"/>
+  <ellipse cx="310" cy="100" rx="32" ry="32" fill="#c8a828"/>
+  <path d="M286 92 L294 92 L294 100 L302 100 L302 92 L310 92 L310 105 L318 105 L318 92 L326 92 L326 100 L334 100 L334 92"
+        fill="none" stroke="#555" stroke-width="3" stroke-linecap="round"/>
+  <!-- Legs -->
+  <rect x="292" y="138" width="6" height="30" rx="1" fill="#aaa"/>
+  <rect x="322" y="138" width="6" height="30" rx="1" fill="#aaa"/>
+  <text x="295" y="180" font-family="monospace" font-size="8" fill="#aaa" text-anchor="middle">L1</text>
+  <text x="325" y="180" font-family="monospace" font-size="8" fill="#aaa" text-anchor="middle">L2</text>
+
+  <!-- 10kΩ fixed resistor -->
+  <line x1="325" y1="168" x2="325" y2="190" stroke="#aaa" stroke-width="2"/>
+  <rect x="314" y="190" width="24" height="38" rx="7" fill="#d4a847"/>
+  <rect x="318" y="195" width="7" height="38" rx="1" fill="#8B4513" transform="rotate(-0 321 214)"/>
+  <!-- Simplified vertical resistor bands -->
+  <rect x="314" y="196" width="24" height="6" rx="1" fill="#8B4513" opacity="0.8"/>
+  <rect x="314" y="206" width="24" height="6" rx="1" fill="#111"/>
+  <rect x="314" y="216" width="24" height="6" rx="1" fill="#ff8800"/>
+  <rect x="314" y="226" width="24" height="6" rx="1" fill="#d4af37"/>
+  <line x1="325" y1="228" x2="325" y2="248" stroke="#5599ff" stroke-width="2"/>
+  <text x="360" y="210" font-family="monospace" font-size="9" fill="#ffcc00">10kΩ</text>
+  <text x="360" y="222" font-family="monospace" font-size="8" fill="#888">pull-down</text>
+
+  <!-- GND connection -->
+  <ellipse cx="325" cy="252" rx="12" ry="6" fill="#333" stroke="#555"/>
+  <text x="325" y="255" font-family="monospace" font-size="7" fill="#5599ff" text-anchor="middle">GND</text>
+
+  <!-- Wires -->
+  <!-- 3.3V → LDR leg 1 (red) -->
+  <polyline points="120,83 200,83 200,60 295,60 295,138" fill="none" stroke="#e94560" stroke-width="2.5"/>
+  <!-- LDR leg 2 junction → GPIO34 (yellow) -->
+  <polyline points="325,138 325,168" fill="none" stroke="#ffcc00" stroke-width="2"/>
+  <polyline points="120,103 325,103 325,138" fill="none" stroke="#ffcc00" stroke-width="2.5"/>
+  <circle cx="325" cy="138" r="4" fill="#ffcc00"/>
+  <!-- GND (blue) -->
+  <polyline points="120,123 170,123 170,248 313,248" fill="none" stroke="#5599ff" stroke-width="2.5"/>
+
+  <!-- Voltage at GPIO label -->
+  <rect x="170" y="88" width="100" height="26" rx="3" fill="#1a1a2e" stroke="#ffcc00"/>
+  <text x="220" y="99" font-family="monospace" font-size="8" fill="#ffcc00" text-anchor="middle">Bright → HIGH V</text>
+  <text x="220" y="109" font-family="monospace" font-size="8" fill="#888" text-anchor="middle">Dark  → LOW V</text>
+
+  <!-- ADC1 note -->
+  <rect x="30" y="242" width="420" height="28" rx="4" fill="#1a1a2e" stroke="#333"/>
+  <text x="240" y="254" font-family="sans-serif" font-size="9" fill="#aaffaa" text-anchor="middle">✓ GPIO 34 is ADC1 — works correctly with WiFi active</text>
+  <text x="240" y="266" font-family="monospace" font-size="8" fill="#888" text-anchor="middle">3.3V → LDR → GPIO 34 → 10kΩ → GND</text>
+
+  <!-- Title -->
+  <text x="240" y="20" font-family="sans-serif" font-size="11" fill="#e94560" text-anchor="middle" font-weight="bold">LDR Voltage Divider Wiring — Zyron ESP32 Starter Kit</text>
+  <text x="240" y="34" font-family="sans-serif" font-size="9" fill="#888" text-anchor="middle">zyron.co.za</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" width="360" height="220">
+  <rect width="360" height="220" fill="#1a1a2e"/>
+
+  <!-- Male-Male wire (red) -->
+  <rect x="50" y="50" width="10" height="16" rx="2" fill="#d4af37" stroke="#a08020"/>
+  <line x1="55" y1="66" x2="55" y2="110" stroke="#e94560" stroke-width="5" stroke-linecap="round"/>
+  <rect x="50" y="110" width="10" height="16" rx="2" fill="#d4af37" stroke="#a08020"/>
+  <!-- Male pins sticking out -->
+  <rect x="53" y="40" width="4" height="12" rx="1" fill="#aaa"/>
+  <rect x="53" y="126" width="4" height="12" rx="1" fill="#aaa"/>
+  <text x="55" y="148" font-family="monospace" font-size="8" fill="#aaa" text-anchor="middle">M–M</text>
+
+  <!-- Male-Female wire (blue) -->
+  <rect x="105" y="50" width="10" height="16" rx="2" fill="#d4af37" stroke="#a08020"/>
+  <line x1="110" y1="66" x2="110" y2="110" stroke="#5599ff" stroke-width="5" stroke-linecap="round"/>
+  <!-- Female socket end -->
+  <rect x="103" y="108" width="14" height="20" rx="3" fill="#333" stroke="#555"/>
+  <rect x="106" y="111" width="8" height="14" rx="1" fill="#111"/>
+  <!-- Male pin top -->
+  <rect x="108" y="40" width="4" height="12" rx="1" fill="#aaa"/>
+  <text x="110" y="148" font-family="monospace" font-size="8" fill="#aaa" text-anchor="middle">M–F</text>
+
+  <!-- Female-Female wire (yellow) -->
+  <rect x="155" y="48" width="14" height="20" rx="3" fill="#333" stroke="#555"/>
+  <rect x="158" y="51" width="8" height="14" rx="1" fill="#111"/>
+  <line x1="162" y1="68" x2="162" y2="110" stroke="#ffcc00" stroke-width="5" stroke-linecap="round"/>
+  <rect x="155" y="108" width="14" height="20" rx="3" fill="#333" stroke="#555"/>
+  <rect x="158" y="111" width="8" height="14" rx="1" fill="#111"/>
+  <text x="162" y="148" font-family="monospace" font-size="8" fill="#aaa" text-anchor="middle">F–F</text>
+
+  <!-- Wire bundle illustration -->
+  <g>
+    <line x1="220" y1="55" x2="310" y2="55" stroke="#e94560" stroke-width="4" stroke-linecap="round"/>
+    <line x1="220" y1="68" x2="310" y2="68" stroke="#5599ff" stroke-width="4" stroke-linecap="round"/>
+    <line x1="220" y1="81" x2="310" y2="81" stroke="#ffcc00" stroke-width="4" stroke-linecap="round"/>
+    <line x1="220" y1="94" x2="310" y2="94" stroke="#aaffaa" stroke-width="4" stroke-linecap="round"/>
+    <line x1="220" y1="107" x2="310" y2="107" stroke="#ff8800" stroke-width="4" stroke-linecap="round"/>
+    <line x1="220" y1="120" x2="310" y2="120" stroke="#cc88ff" stroke-width="4" stroke-linecap="round"/>
+    <!-- Connectors left -->
+    <g fill="#d4af37" stroke="#a08020" stroke-width="0.5">
+      <rect x="210" y="50" width="10" height="10" rx="1"/>
+      <rect x="210" y="63" width="10" height="10" rx="1"/>
+      <rect x="210" y="76" width="10" height="10" rx="1"/>
+      <rect x="210" y="89" width="10" height="10" rx="1"/>
+      <rect x="210" y="102" width="10" height="10" rx="1"/>
+      <rect x="210" y="115" width="10" height="10" rx="1"/>
+    </g>
+    <!-- Connectors right -->
+    <g fill="#d4af37" stroke="#a08020" stroke-width="0.5">
+      <rect x="310" y="50" width="10" height="10" rx="1"/>
+      <rect x="310" y="63" width="10" height="10" rx="1"/>
+      <rect x="310" y="76" width="10" height="10" rx="1"/>
+      <rect x="310" y="89" width="10" height="10" rx="1"/>
+      <rect x="310" y="102" width="10" height="10" rx="1"/>
+      <rect x="310" y="115" width="10" height="10" rx="1"/>
+    </g>
+  </g>
+
+  <!-- Usage guide -->
+  <text x="180" y="168" font-family="sans-serif" font-size="9" fill="#888" text-anchor="middle">M–M: breadboard to breadboard</text>
+  <text x="180" y="181" font-family="sans-serif" font-size="9" fill="#888" text-anchor="middle">M–F: ESP32 pin header → breadboard/sensor</text>
+  <text x="180" y="194" font-family="sans-serif" font-size="9" fill="#888" text-anchor="middle">F–F: module to module</text>
+
+  <!-- Title -->
+  <text x="180" y="16" font-family="sans-serif" font-size="10" fill="#e94560" text-anchor="middle" font-weight="bold">Jumper Wires — zyron.co.za</text>
+  <text x="180" y="28" font-family="sans-serif" font-size="9" fill="#888" text-anchor="middle">Male–Male · Male–Female · Female–Female</text>
+</svg>

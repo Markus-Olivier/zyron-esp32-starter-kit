@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 340" width="580" height="340">
+  <rect width="580" height="340" fill="#0f0f1a"/>
+
+  <!-- Title -->
+  <text x="290" y="22" font-family="sans-serif" font-size="12" fill="#e94560" text-anchor="middle" font-weight="bold">Breadboard — LED + Resistor Example</text>
+  <text x="290" y="36" font-family="sans-serif" font-size="9" fill="#888" text-anchor="middle">zyron.co.za · GPIO2 → 220Ω resistor → LED → GND</text>
+
+  <!-- ── ESP32 (simplified) ── -->
+  <rect x="20" y="80" width="80" height="180" rx="5" fill="#1a6b1a" stroke="#2d8a2d" stroke-width="1.5"/>
+  <text x="60" y="100" font-family="monospace" font-size="9" fill="#fff" text-anchor="middle" font-weight="bold">ESP32</text>
+  <!-- Pin stubs -->
+  <rect x="98" y="110" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="98" y="130" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="98" y="150" width="12" height="7" rx="1" fill="#d4af37"/>
+  <!-- Labels -->
+  <text x="96" y="117" font-family="monospace" font-size="7.5" fill="#e94560" text-anchor="end">3.3V</text>
+  <text x="96" y="137" font-family="monospace" font-size="7.5" fill="#5599ff" text-anchor="end">GND</text>
+  <text x="96" y="157" font-family="monospace" font-size="7.5" fill="#aaffaa" text-anchor="end">GPIO2</text>
+
+  <!-- ── BREADBOARD ── -->
+  <rect x="150" y="70" width="350" height="240" rx="8" fill="#f0e8c0" stroke="#c8b870" stroke-width="2"/>
+
+  <!-- Column numbers -->
+  <text x="175" y="67" font-family="monospace" font-size="8" fill="#666" text-anchor="middle">1</text>
+  <text x="203" y="67" font-family="monospace" font-size="8" fill="#666" text-anchor="middle">2</text>
+  <text x="231" y="67" font-family="monospace" font-size="8" fill="#666" text-anchor="middle">3</text>
+  <text x="259" y="67" font-family="monospace" font-size="8" fill="#666" text-anchor="middle">4</text>
+  <text x="287" y="67" font-family="monospace" font-size="8" fill="#666" text-anchor="middle">5</text>
+  <text x="315" y="67" font-family="monospace" font-size="8" fill="#666" text-anchor="middle">6</text>
+  <text x="343" y="67" font-family="monospace" font-size="8" fill="#666" text-anchor="middle">7</text>
+  <text x="371" y="67" font-family="monospace" font-size="8" fill="#666" text-anchor="middle">8</text>
+  <text x="399" y="67" font-family="monospace" font-size="8" fill="#666" text-anchor="middle">9</text>
+  <text x="427" y="67" font-family="monospace" font-size="8" fill="#666" text-anchor="middle">10</text>
+  <text x="455" y="67" font-family="monospace" font-size="8" fill="#666" text-anchor="middle">11</text>
+  <text x="483" y="67" font-family="monospace" font-size="8" fill="#666" text-anchor="middle">12</text>
+
+  <!-- Top power rails -->
+  <rect x="158" y="78" width="334" height="16" rx="3" fill="#ffdddd" stroke="#ffaaaa"/>
+  <line x1="163" y1="86" x2="488" y2="86" stroke="#e94560" stroke-width="2"/>
+  <text x="158" y="84" font-family="monospace" font-size="8" fill="#cc0000" font-weight="bold">+</text>
+  <rect x="158" y="96" width="334" height="16" rx="3" fill="#ddeeff" stroke="#aaccff"/>
+  <line x1="163" y1="104" x2="488" y2="104" stroke="#5599ff" stroke-width="2"/>
+  <text x="158" y="102" font-family="monospace" font-size="8" fill="#0055cc" font-weight="bold">−</text>
+
+  <!-- Rail holes (top) -->
+  <g fill="#aaa">
+    <circle cx="175" cy="86" r="3.5"/> <circle cx="203" cy="86" r="3.5"/> <circle cx="231" cy="86" r="3.5"/>
+    <circle cx="259" cy="86" r="3.5"/> <circle cx="287" cy="86" r="3.5"/> <circle cx="315" cy="86" r="3.5"/>
+    <circle cx="343" cy="86" r="3.5"/> <circle cx="371" cy="86" r="3.5"/> <circle cx="399" cy="86" r="3.5"/>
+    <circle cx="427" cy="86" r="3.5"/> <circle cx="455" cy="86" r="3.5"/> <circle cx="483" cy="86" r="3.5"/>
+    <circle cx="175" cy="104" r="3.5"/> <circle cx="203" cy="104" r="3.5"/> <circle cx="231" cy="104" r="3.5"/>
+    <circle cx="259" cy="104" r="3.5"/> <circle cx="287" cy="104" r="3.5"/> <circle cx="315" cy="104" r="3.5"/>
+    <circle cx="343" cy="104" r="3.5"/> <circle cx="371" cy="104" r="3.5"/> <circle cx="399" cy="104" r="3.5"/>
+    <circle cx="427" cy="104" r="3.5"/> <circle cx="455" cy="104" r="3.5"/> <circle cx="483" cy="104" r="3.5"/>
+  </g>
+
+  <!-- Row labels -->
+  <text x="162" y="126" font-family="monospace" font-size="9" fill="#666" font-weight="bold">a</text>
+  <text x="162" y="142" font-family="monospace" font-size="9" fill="#666" font-weight="bold">b</text>
+  <text x="162" y="158" font-family="monospace" font-size="9" fill="#666" font-weight="bold">c</text>
+  <text x="162" y="174" font-family="monospace" font-size="9" fill="#666" font-weight="bold">d</text>
+  <text x="162" y="190" font-family="monospace" font-size="9" fill="#666" font-weight="bold">e</text>
+
+  <!-- Gap -->
+  <rect x="156" y="196" width="338" height="12" rx="0" fill="#d8cc90"/>
+  <text x="330" y="204" font-family="monospace" font-size="7.5" fill="#888" text-anchor="middle">gap</text>
+
+  <text x="162" y="220" font-family="monospace" font-size="9" fill="#666" font-weight="bold">f</text>
+  <text x="162" y="236" font-family="monospace" font-size="9" fill="#666" font-weight="bold">g</text>
+  <text x="162" y="252" font-family="monospace" font-size="9" fill="#666" font-weight="bold">h</text>
+  <text x="162" y="268" font-family="monospace" font-size="9" fill="#666" font-weight="bold">i</text>
+  <text x="162" y="284" font-family="monospace" font-size="9" fill="#666" font-weight="bold">j</text>
+
+  <!-- All holes (rows a-e, f-j) -->
+  <g fill="#aaa">
+    <!-- rows a-e -->
+    <circle cx="175" cy="122" r="3.5"/> <circle cx="203" cy="122" r="3.5"/> <circle cx="231" cy="122" r="3.5"/> <circle cx="259" cy="122" r="3.5"/> <circle cx="287" cy="122" r="3.5"/> <circle cx="315" cy="122" r="3.5"/> <circle cx="343" cy="122" r="3.5"/> <circle cx="371" cy="122" r="3.5"/> <circle cx="399" cy="122" r="3.5"/> <circle cx="427" cy="122" r="3.5"/> <circle cx="455" cy="122" r="3.5"/> <circle cx="483" cy="122" r="3.5"/>
+    <circle cx="175" cy="138" r="3.5"/> <circle cx="203" cy="138" r="3.5"/> <circle cx="231" cy="138" r="3.5"/> <circle cx="259" cy="138" r="3.5"/> <circle cx="287" cy="138" r="3.5"/> <circle cx="315" cy="138" r="3.5"/> <circle cx="343" cy="138" r="3.5"/> <circle cx="371" cy="138" r="3.5"/> <circle cx="399" cy="138" r="3.5"/> <circle cx="427" cy="138" r="3.5"/> <circle cx="455" cy="138" r="3.5"/> <circle cx="483" cy="138" r="3.5"/>
+    <circle cx="175" cy="154" r="3.5"/> <circle cx="203" cy="154" r="3.5"/> <circle cx="231" cy="154" r="3.5"/> <circle cx="259" cy="154" r="3.5"/> <circle cx="287" cy="154" r="3.5"/> <circle cx="315" cy="154" r="3.5"/> <circle cx="343" cy="154" r="3.5"/> <circle cx="371" cy="154" r="3.5"/> <circle cx="399" cy="154" r="3.5"/> <circle cx="427" cy="154" r="3.5"/> <circle cx="455" cy="154" r="3.5"/> <circle cx="483" cy="154" r="3.5"/>
+    <circle cx="175" cy="170" r="3.5"/> <circle cx="203" cy="170" r="3.5"/> <circle cx="231" cy="170" r="3.5"/> <circle cx="259" cy="170" r="3.5"/> <circle cx="287" cy="170" r="3.5"/> <circle cx="315" cy="170" r="3.5"/> <circle cx="343" cy="170" r="3.5"/> <circle cx="371" cy="170" r="3.5"/> <circle cx="399" cy="170" r="3.5"/> <circle cx="427" cy="170" r="3.5"/> <circle cx="455" cy="170" r="3.5"/> <circle cx="483" cy="170" r="3.5"/>
+    <circle cx="175" cy="186" r="3.5"/> <circle cx="203" cy="186" r="3.5"/> <circle cx="231" cy="186" r="3.5"/> <circle cx="259" cy="186" r="3.5"/> <circle cx="287" cy="186" r="3.5"/> <circle cx="315" cy="186" r="3.5"/> <circle cx="343" cy="186" r="3.5"/> <circle cx="371" cy="186" r="3.5"/> <circle cx="399" cy="186" r="3.5"/> <circle cx="427" cy="186" r="3.5"/> <circle cx="455" cy="186" r="3.5"/> <circle cx="483" cy="186" r="3.5"/>
+    <!-- rows f-j -->
+    <circle cx="175" cy="216" r="3.5"/> <circle cx="203" cy="216" r="3.5"/> <circle cx="231" cy="216" r="3.5"/> <circle cx="259" cy="216" r="3.5"/> <circle cx="287" cy="216" r="3.5"/> <circle cx="315" cy="216" r="3.5"/> <circle cx="343" cy="216" r="3.5"/> <circle cx="371" cy="216" r="3.5"/> <circle cx="399" cy="216" r="3.5"/> <circle cx="427" cy="216" r="3.5"/> <circle cx="455" cy="216" r="3.5"/> <circle cx="483" cy="216" r="3.5"/>
+    <circle cx="175" cy="232" r="3.5"/> <circle cx="203" cy="232" r="3.5"/> <circle cx="231" cy="232" r="3.5"/> <circle cx="259" cy="232" r="3.5"/> <circle cx="287" cy="232" r="3.5"/> <circle cx="315" cy="232" r="3.5"/> <circle cx="343" cy="232" r="3.5"/> <circle cx="371" cy="232" r="3.5"/> <circle cx="399" cy="232" r="3.5"/> <circle cx="427" cy="232" r="3.5"/> <circle cx="455" cy="232" r="3.5"/> <circle cx="483" cy="232" r="3.5"/>
+    <circle cx="175" cy="248" r="3.5"/> <circle cx="203" cy="248" r="3.5"/> <circle cx="231" cy="248" r="3.5"/> <circle cx="259" cy="248" r="3.5"/> <circle cx="287" cy="248" r="3.5"/> <circle cx="315" cy="248" r="3.5"/> <circle cx="343" cy="248" r="3.5"/> <circle cx="371" cy="248" r="3.5"/> <circle cx="399" cy="248" r="3.5"/> <circle cx="427" cy="248" r="3.5"/> <circle cx="455" cy="248" r="3.5"/> <circle cx="483" cy="248" r="3.5"/>
+    <circle cx="175" cy="264" r="3.5"/> <circle cx="203" cy="264" r="3.5"/> <circle cx="231" cy="264" r="3.5"/> <circle cx="259" cy="264" r="3.5"/> <circle cx="287" cy="264" r="3.5"/> <circle cx="315" cy="264" r="3.5"/> <circle cx="343" cy="264" r="3.5"/> <circle cx="371" cy="264" r="3.5"/> <circle cx="399" cy="264" r="3.5"/> <circle cx="427" cy="264" r="3.5"/> <circle cx="455" cy="264" r="3.5"/> <circle cx="483" cy="264" r="3.5"/>
+    <circle cx="175" cy="280" r="3.5"/> <circle cx="203" cy="280" r="3.5"/> <circle cx="231" cy="280" r="3.5"/> <circle cx="259" cy="280" r="3.5"/> <circle cx="287" cy="280" r="3.5"/> <circle cx="315" cy="280" r="3.5"/> <circle cx="343" cy="280" r="3.5"/> <circle cx="371" cy="280" r="3.5"/> <circle cx="399" cy="280" r="3.5"/> <circle cx="427" cy="280" r="3.5"/> <circle cx="455" cy="280" r="3.5"/> <circle cx="483" cy="280" r="3.5"/>
+  </g>
+
+  <!-- ── COMPONENTS ── -->
+  <!-- Resistor in col 5, rows a-e (top half), horizontal bridge -->
+  <!-- Resistor body (col 3-5, row c) -->
+  <rect x="222" y="148" width="46" height="12" rx="5" fill="#d4a847" stroke="#b8902a"/>
+  <!-- Colour bands -->
+  <rect x="228" y="148" width="5" height="12" rx="1" fill="#cc0000"/>
+  <rect x="237" y="148" width="5" height="12" rx="1" fill="#cc0000"/>
+  <rect x="246" y="148" width="5" height="12" rx="1" fill="#8B4513"/>
+  <rect x="255" y="148" width="5" height="12" rx="1" fill="#d4af37"/>
+  <!-- Resistor leads -->
+  <line x1="219" y1="154" x2="222" y2="154" stroke="#aaa" stroke-width="2"/>
+  <line x1="268" y1="154" x2="271" y2="154" stroke="#aaa" stroke-width="2"/>
+  <!-- Highlight holes where resistor sits -->
+  <circle cx="203" cy="154" r="5" fill="#ff8800" opacity="0.6"/>
+  <circle cx="287" cy="154" r="5" fill="#ff8800" opacity="0.6"/>
+  <text x="245" y="145" font-family="monospace" font-size="8" fill="#ffcc00" text-anchor="middle">220Ω</text>
+
+  <!-- LED in col 5, rows f-j (bottom half) -->
+  <!-- LED body -->
+  <ellipse cx="287" cy="230" rx="8" ry="9" fill="#ff4444" stroke="#cc2222" stroke-width="1.5" opacity="0.9"/>
+  <ellipse cx="287" cy="230" rx="5" ry="6" fill="#ff8888" opacity="0.7"/>
+  <!-- LED leads -->
+  <line x1="287" y1="216" x2="287" y2="221" stroke="#aaa" stroke-width="2"/>
+  <line x1="287" y1="239" x2="287" y2="248" stroke="#aaa" stroke-width="2"/>
+  <!-- Highlight holes where LED sits (anode col5/f, cathode col5/h) -->
+  <circle cx="287" cy="216" r="5" fill="#ff4444" opacity="0.7"/>
+  <circle cx="287" cy="248" r="5" fill="#5599ff" opacity="0.6"/>
+  <text x="307" y="231" font-family="monospace" font-size="8" fill="#ff8888">LED</text>
+  <text x="307" y="241" font-family="monospace" font-size="7" fill="#888">+anode</text>
+  <text x="307" y="253" font-family="monospace" font-size="7" fill="#5599ff">−cathode</text>
+
+  <!-- ── WIRES ── -->
+  <!-- Green wire: GPIO2 → breadboard GND rail (col 1, − rail) -->
+  <polyline points="110,153 140,153 140,104 175,104" fill="none" stroke="#aaffaa" stroke-width="2.5"/>
+  <!-- Orange wire: resistor left leg (col 3, row c) → same row as resistor -->
+  <!-- Red wire: + rail col 1 → row c col 3 -->
+  <!-- Actually: GPIO2 green → row c col 2 (a-e side) -->
+  <!-- Let's redo: GPIO2 → col 2 row c -->
+  <polyline points="110,153 140,153 140,122 203,122" fill="none" stroke="#aaffaa" stroke-width="2.5"/>
+  <!-- connection line col2→col3 row c (same row, connected) -->
+  <!-- Resistor left leg at col 3 row c is connected to col 2 row c internally -->
+  <!-- Wire: col 5 row h (LED cathode) → GND rail -->
+  <polyline points="287,248 287,270 175,270 175,104" fill="none" stroke="#5599ff" stroke-width="2.5"/>
+  <!-- GND from ESP32 → GND rail -->
+  <polyline points="110,133 140,133 140,104 203,104" fill="none" stroke="#5599ff" stroke-width="2.5"/>
+
+  <!-- Connection labels (col annotations) -->
+  <rect x="195" y="115" width="18" height="10" rx="2" fill="#aaffaa44" stroke="#aaffaa"/>
+  <text x="204" y="123" font-family="monospace" font-size="7" fill="#aaffaa" text-anchor="middle">c2</text>
+  <rect x="279" y="115" width="18" height="10" rx="2" fill="#ff880044" stroke="#ff8800"/>
+  <text x="288" y="123" font-family="monospace" font-size="7" fill="#ff8800" text-anchor="middle">c5</text>
+
+  <!-- Row-connection indicator between col 2 and 3 on row c -->
+  <line x1="203" y1="154" x2="222" y2="154" stroke="#aaffaa" stroke-width="2" stroke-dasharray="3,2"/>
+
+  <!-- Bottom rails (bottom of breadboard) -->
+  <rect x="158" y="296" width="334" height="14" rx="3" fill="#ffdddd" stroke="#ffaaaa"/>
+  <line x1="163" y1="303" x2="488" y2="303" stroke="#e94560" stroke-width="2"/>
+  <text x="158" y="301" font-family="monospace" font-size="8" fill="#cc0000" font-weight="bold">+</text>
+
+  <!-- Footer -->
+  <rect x="20" y="315" width="540" height="20" rx="3" fill="#1a1a2e" stroke="#333"/>
+  <text x="290" y="328" font-family="monospace" font-size="8.5" fill="#aaffaa" text-anchor="middle">GPIO2 → row c2  →  220Ω  →  row c5 / f5  →  LED (anode)  →  LED (cathode) at h5  →  GND rail</text>
+</svg>

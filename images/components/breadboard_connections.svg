@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 340" width="560" height="340">
+  <rect width="560" height="340" fill="#0f0f1a"/>
+
+  <!-- Title -->
+  <text x="280" y="22" font-family="sans-serif" font-size="12" fill="#e94560" text-anchor="middle" font-weight="bold">Breadboard — Internal Connections</text>
+  <text x="280" y="36" font-family="sans-serif" font-size="9" fill="#888" text-anchor="middle">zyron.co.za · same colour = electrically connected</text>
+
+  <!-- Breadboard body -->
+  <rect x="60" y="50" width="420" height="260" rx="8" fill="#f0e8c0" stroke="#c8b870" stroke-width="2.5"/>
+
+  <!-- Column numbers -->
+  <text x="90"  y="47" font-family="monospace" font-size="8" fill="#555" text-anchor="middle">1</text>
+  <text x="118" y="47" font-family="monospace" font-size="8" fill="#555" text-anchor="middle">2</text>
+  <text x="146" y="47" font-family="monospace" font-size="8" fill="#555" text-anchor="middle">3</text>
+  <text x="174" y="47" font-family="monospace" font-size="8" fill="#555" text-anchor="middle">4</text>
+  <text x="202" y="47" font-family="monospace" font-size="8" fill="#555" text-anchor="middle">5</text>
+  <text x="230" y="47" font-family="monospace" font-size="8" fill="#555" text-anchor="middle">6</text>
+  <text x="258" y="47" font-family="monospace" font-size="8" fill="#555" text-anchor="middle">7</text>
+  <text x="286" y="47" font-family="monospace" font-size="8" fill="#555" text-anchor="middle">8</text>
+  <text x="314" y="47" font-family="monospace" font-size="8" fill="#555" text-anchor="middle">9</text>
+  <text x="342" y="47" font-family="monospace" font-size="8" fill="#555" text-anchor="middle">10</text>
+  <text x="370" y="47" font-family="monospace" font-size="8" fill="#555" text-anchor="middle">11</text>
+  <text x="398" y="47" font-family="monospace" font-size="8" fill="#555" text-anchor="middle">12</text>
+  <text x="426" y="47" font-family="monospace" font-size="8" fill="#555" text-anchor="middle">13</text>
+  <text x="454" y="47" font-family="monospace" font-size="8" fill="#555" text-anchor="middle">14</text>
+
+  <!-- ── TOP POWER RAILS ── -->
+  <!-- + rail: red band = fully connected along length -->
+  <rect x="68" y="57" width="404" height="18" rx="3" fill="#ffdddd" stroke="#ffaaaa" stroke-width="1"/>
+  <line x1="75" y1="66" x2="468" y2="66" stroke="#e94560" stroke-width="2.5" stroke-dasharray="0"/>
+  <text x="68" y="63" font-family="monospace" font-size="9" fill="#cc0000" font-weight="bold">+</text>
+
+  <!-- − rail: blue band -->
+  <rect x="68" y="78" width="404" height="18" rx="3" fill="#ddeeff" stroke="#aaccff" stroke-width="1"/>
+  <line x1="75" y1="87" x2="468" y2="87" stroke="#5599ff" stroke-width="2.5"/>
+  <text x="68" y="83" font-family="monospace" font-size="9" fill="#0055cc" font-weight="bold">−</text>
+
+  <!-- Power rail holes -->
+  <g fill="#aaa">
+    <circle cx="90"  cy="66" r="4"/> <circle cx="118" cy="66" r="4"/> <circle cx="146" cy="66" r="4"/>
+    <circle cx="174" cy="66" r="4"/> <circle cx="202" cy="66" r="4"/> <circle cx="230" cy="66" r="4"/>
+    <circle cx="258" cy="66" r="4"/> <circle cx="286" cy="66" r="4"/> <circle cx="314" cy="66" r="4"/>
+    <circle cx="342" cy="66" r="4"/> <circle cx="370" cy="66" r="4"/> <circle cx="398" cy="66" r="4"/>
+    <circle cx="426" cy="66" r="4"/> <circle cx="454" cy="66" r="4"/>
+
+    <circle cx="90"  cy="87" r="4"/> <circle cx="118" cy="87" r="4"/> <circle cx="146" cy="87" r="4"/>
+    <circle cx="174" cy="87" r="4"/> <circle cx="202" cy="87" r="4"/> <circle cx="230" cy="87" r="4"/>
+    <circle cx="258" cy="87" r="4"/> <circle cx="286" cy="87" r="4"/> <circle cx="314" cy="87" r="4"/>
+    <circle cx="342" cy="87" r="4"/> <circle cx="370" cy="87" r="4"/> <circle cx="398" cy="87" r="4"/>
+    <circle cx="426" cy="87" r="4"/> <circle cx="454" cy="87" r="4"/>
+  </g>
+
+  <!-- Row labels (left side) -->
+  <text x="73" y="113" font-family="monospace" font-size="9" fill="#555" font-weight="bold">a</text>
+  <text x="73" y="129" font-family="monospace" font-size="9" fill="#555" font-weight="bold">b</text>
+  <text x="73" y="145" font-family="monospace" font-size="9" fill="#555" font-weight="bold">c</text>
+  <text x="73" y="161" font-family="monospace" font-size="9" fill="#555" font-weight="bold">d</text>
+  <text x="73" y="177" font-family="monospace" font-size="9" fill="#555" font-weight="bold">e</text>
+
+  <!-- ── COLUMN HIGHLIGHT BANDS (rows a-e) — each column is its own colour group ── -->
+  <!-- col 1 green -->
+  <rect x="83" y="102" width="14" height="80" rx="3" fill="#00cc6633" stroke="#00cc6666"/>
+  <!-- col 2 purple -->
+  <rect x="111" y="102" width="14" height="80" rx="3" fill="#aa44ff33" stroke="#aa44ff66"/>
+  <!-- col 3 orange -->
+  <rect x="139" y="102" width="14" height="80" rx="3" fill="#ff880033" stroke="#ff880066"/>
+  <!-- col 4 teal -->
+  <rect x="167" y="102" width="14" height="80" rx="3" fill="#00cccc33" stroke="#00cccc66"/>
+  <!-- col 5 yellow -->
+  <rect x="195" y="102" width="14" height="80" rx="3" fill="#ffcc0033" stroke="#ffcc0066"/>
+
+  <!-- top-half holes (rows a-e, cols 1-14) -->
+  <g fill="#888">
+    <!-- row a -->
+    <circle cx="90"  cy="109" r="4"/> <circle cx="118" cy="109" r="4"/> <circle cx="146" cy="109" r="4"/>
+    <circle cx="174" cy="109" r="4"/> <circle cx="202" cy="109" r="4"/> <circle cx="230" cy="109" r="4"/>
+    <circle cx="258" cy="109" r="4"/> <circle cx="286" cy="109" r="4"/> <circle cx="314" cy="109" r="4"/>
+    <circle cx="342" cy="109" r="4"/> <circle cx="370" cy="109" r="4"/> <circle cx="398" cy="109" r="4"/>
+    <circle cx="426" cy="109" r="4"/> <circle cx="454" cy="109" r="4"/>
+    <!-- row b -->
+    <circle cx="90"  cy="125" r="4"/> <circle cx="118" cy="125" r="4"/> <circle cx="146" cy="125" r="4"/>
+    <circle cx="174" cy="125" r="4"/> <circle cx="202" cy="125" r="4"/> <circle cx="230" cy="125" r="4"/>
+    <circle cx="258" cy="125" r="4"/> <circle cx="286" cy="125" r="4"/> <circle cx="314" cy="125" r="4"/>
+    <circle cx="342" cy="125" r="4"/> <circle cx="370" cy="125" r="4"/> <circle cx="398" cy="125" r="4"/>
+    <circle cx="426" cy="125" r="4"/> <circle cx="454" cy="125" r="4"/>
+    <!-- row c -->
+    <circle cx="90"  cy="141" r="4"/> <circle cx="118" cy="141" r="4"/> <circle cx="146" cy="141" r="4"/>
+    <circle cx="174" cy="141" r="4"/> <circle cx="202" cy="141" r="4"/> <circle cx="230" cy="141" r="4"/>
+    <circle cx="258" cy="141" r="4"/> <circle cx="286" cy="141" r="4"/> <circle cx="314" cy="141" r="4"/>
+    <circle cx="342" cy="141" r="4"/> <circle cx="370" cy="141" r="4"/> <circle cx="398" cy="141" r="4"/>
+    <circle cx="426" cy="141" r="4"/> <circle cx="454" cy="141" r="4"/>
+    <!-- row d -->
+    <circle cx="90"  cy="157" r="4"/> <circle cx="118" cy="157" r="4"/> <circle cx="146" cy="157" r="4"/>
+    <circle cx="174" cy="157" r="4"/> <circle cx="202" cy="157" r="4"/> <circle cx="230" cy="157" r="4"/>
+    <circle cx="258" cy="157" r="4"/> <circle cx="286" cy="157" r="4"/> <circle cx="314" cy="157" r="4"/>
+    <circle cx="342" cy="157" r="4"/> <circle cx="370" cy="157" r="4"/> <circle cx="398" cy="157" r="4"/>
+    <circle cx="426" cy="157" r="4"/> <circle cx="454" cy="157" r="4"/>
+    <!-- row e -->
+    <circle cx="90"  cy="173" r="4"/> <circle cx="118" cy="173" r="4"/> <circle cx="146" cy="173" r="4"/>
+    <circle cx="174" cy="173" r="4"/> <circle cx="202" cy="173" r="4"/> <circle cx="230" cy="173" r="4"/>
+    <circle cx="258" cy="173" r="4"/> <circle cx="286" cy="173" r="4"/> <circle cx="314" cy="173" r="4"/>
+    <circle cx="342" cy="173" r="4"/> <circle cx="370" cy="173" r="4"/> <circle cx="398" cy="173" r="4"/>
+    <circle cx="426" cy="173" r="4"/> <circle cx="454" cy="173" r="4"/>
+  </g>
+
+  <!-- Centre gap -->
+  <rect x="66" y="182" width="408" height="14" rx="0" fill="#d8cc90"/>
+  <text x="270" y="192" font-family="monospace" font-size="8" fill="#888" text-anchor="middle">⬅ NO CONNECTION across this gap ➡</text>
+
+  <!-- Row labels (left side, bottom half) -->
+  <text x="73" y="208" font-family="monospace" font-size="9" fill="#555" font-weight="bold">f</text>
+  <text x="73" y="224" font-family="monospace" font-size="9" fill="#555" font-weight="bold">g</text>
+  <text x="73" y="240" font-family="monospace" font-size="9" fill="#555" font-weight="bold">h</text>
+  <text x="73" y="256" font-family="monospace" font-size="9" fill="#555" font-weight="bold">i</text>
+  <text x="73" y="272" font-family="monospace" font-size="9" fill="#555" font-weight="bold">j</text>
+
+  <!-- ── COLUMN HIGHLIGHT BANDS (rows f-j) — same col = same colour ── -->
+  <rect x="83" y="197" width="14" height="80" rx="3" fill="#00cc6633" stroke="#00cc6666"/>
+  <rect x="111" y="197" width="14" height="80" rx="3" fill="#aa44ff33" stroke="#aa44ff66"/>
+  <rect x="139" y="197" width="14" height="80" rx="3" fill="#ff880033" stroke="#ff880066"/>
+  <rect x="167" y="197" width="14" height="80" rx="3" fill="#00cccc33" stroke="#00cccc66"/>
+  <rect x="195" y="197" width="14" height="80" rx="3" fill="#ffcc0033" stroke="#ffcc0066"/>
+
+  <!-- bottom-half holes (rows f-j, cols 1-14) -->
+  <g fill="#888">
+    <!-- row f -->
+    <circle cx="90"  cy="204" r="4"/> <circle cx="118" cy="204" r="4"/> <circle cx="146" cy="204" r="4"/>
+    <circle cx="174" cy="204" r="4"/> <circle cx="202" cy="204" r="4"/> <circle cx="230" cy="204" r="4"/>
+    <circle cx="258" cy="204" r="4"/> <circle cx="286" cy="204" r="4"/> <circle cx="314" cy="204" r="4"/>
+    <circle cx="342" cy="204" r="4"/> <circle cx="370" cy="204" r="4"/> <circle cx="398" cy="204" r="4"/>
+    <circle cx="426" cy="204" r="4"/> <circle cx="454" cy="204" r="4"/>
+    <!-- row g -->
+    <circle cx="90"  cy="220" r="4"/> <circle cx="118" cy="220" r="4"/> <circle cx="146" cy="220" r="4"/>
+    <circle cx="174" cy="220" r="4"/> <circle cx="202" cy="220" r="4"/> <circle cx="230" cy="220" r="4"/>
+    <circle cx="258" cy="220" r="4"/> <circle cx="286" cy="220" r="4"/> <circle cx="314" cy="220" r="4"/>
+    <circle cx="342" cy="220" r="4"/> <circle cx="370" cy="220" r="4"/> <circle cx="398" cy="220" r="4"/>
+    <circle cx="426" cy="220" r="4"/> <circle cx="454" cy="220" r="4"/>
+    <!-- row h -->
+    <circle cx="90"  cy="236" r="4"/> <circle cx="118" cy="236" r="4"/> <circle cx="146" cy="236" r="4"/>
+    <circle cx="174" cy="236" r="4"/> <circle cx="202" cy="236" r="4"/> <circle cx="230" cy="236" r="4"/>
+    <circle cx="258" cy="236" r="4"/> <circle cx="286" cy="236" r="4"/> <circle cx="314" cy="236" r="4"/>
+    <circle cx="342" cy="236" r="4"/> <circle cx="370" cy="236" r="4"/> <circle cx="398" cy="236" r="4"/>
+    <circle cx="426" cy="236" r="4"/> <circle cx="454" cy="236" r="4"/>
+    <!-- row i -->
+    <circle cx="90"  cy="252" r="4"/> <circle cx="118" cy="252" r="4"/> <circle cx="146" cy="252" r="4"/>
+    <circle cx="174" cy="252" r="4"/> <circle cx="202" cy="252" r="4"/> <circle cx="230" cy="252" r="4"/>
+    <circle cx="258" cy="252" r="4"/> <circle cx="286" cy="252" r="4"/> <circle cx="314" cy="252" r="4"/>
+    <circle cx="342" cy="252" r="4"/> <circle cx="370" cy="252" r="4"/> <circle cx="398" cy="252" r="4"/>
+    <circle cx="426" cy="252" r="4"/> <circle cx="454" cy="252" r="4"/>
+    <!-- row j -->
+    <circle cx="90"  cy="268" r="4"/> <circle cx="118" cy="268" r="4"/> <circle cx="146" cy="268" r="4"/>
+    <circle cx="174" cy="268" r="4"/> <circle cx="202" cy="268" r="4"/> <circle cx="230" cy="268" r="4"/>
+    <circle cx="258" cy="268" r="4"/> <circle cx="286" cy="268" r="4"/> <circle cx="314" cy="268" r="4"/>
+    <circle cx="342" cy="268" r="4"/> <circle cx="370" cy="268" r="4"/> <circle cx="398" cy="268" r="4"/>
+    <circle cx="426" cy="268" r="4"/> <circle cx="454" cy="268" r="4"/>
+  </g>
+
+  <!-- ── BOTTOM POWER RAILS ── -->
+  <rect x="68" y="283" width="404" height="18" rx="3" fill="#ffdddd" stroke="#ffaaaa" stroke-width="1"/>
+  <line x1="75" y1="292" x2="468" y2="292" stroke="#e94560" stroke-width="2.5"/>
+  <text x="68" y="289" font-family="monospace" font-size="9" fill="#cc0000" font-weight="bold">+</text>
+  <rect x="68" y="302" width="404" height="18" rx="3" fill="#ddeeff" stroke="#aaccff" stroke-width="1"/>
+  <line x1="75" y1="311" x2="468" y2="311" stroke="#5599ff" stroke-width="2.5"/>
+  <text x="68" y="308" font-family="monospace" font-size="9" fill="#0055cc" font-weight="bold">−</text>
+  <g fill="#aaa">
+    <circle cx="90"  cy="292" r="4"/> <circle cx="118" cy="292" r="4"/> <circle cx="146" cy="292" r="4"/>
+    <circle cx="174" cy="292" r="4"/> <circle cx="202" cy="292" r="4"/> <circle cx="230" cy="292" r="4"/>
+    <circle cx="258" cy="292" r="4"/> <circle cx="286" cy="292" r="4"/> <circle cx="314" cy="292" r="4"/>
+    <circle cx="342" cy="292" r="4"/> <circle cx="370" cy="292" r="4"/> <circle cx="398" cy="292" r="4"/>
+    <circle cx="426" cy="292" r="4"/> <circle cx="454" cy="292" r="4"/>
+    <circle cx="90"  cy="311" r="4"/> <circle cx="118" cy="311" r="4"/> <circle cx="146" cy="311" r="4"/>
+    <circle cx="174" cy="311" r="4"/> <circle cx="202" cy="311" r="4"/> <circle cx="230" cy="311" r="4"/>
+    <circle cx="258" cy="311" r="4"/> <circle cx="286" cy="311" r="4"/> <circle cx="314" cy="311" r="4"/>
+    <circle cx="342" cy="311" r="4"/> <circle cx="370" cy="311" r="4"/> <circle cx="398" cy="311" r="4"/>
+    <circle cx="426" cy="311" r="4"/> <circle cx="454" cy="311" r="4"/>
+  </g>
+
+  <!-- Right-side annotations -->
+  <!-- Horizontal row connection arrows -->
+  <line x1="468" y1="109" x2="530" y2="109" stroke="#888" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="532" y="113" font-family="monospace" font-size="8" fill="#888">← row connected</text>
+  <line x1="468" y1="187" x2="530" y2="187" stroke="#d8cc90" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="532" y="191" font-family="monospace" font-size="8" fill="#c8b84a">gap = no link</text>
+  <line x1="468" y1="204" x2="530" y2="204" stroke="#888" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="532" y="208" font-family="monospace" font-size="8" fill="#888">← row connected</text>
+  <line x1="468" y1="292" x2="530" y2="292" stroke="#e94560" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="532" y="296" font-family="monospace" font-size="8" fill="#e94560">power rail</text>
+</svg>

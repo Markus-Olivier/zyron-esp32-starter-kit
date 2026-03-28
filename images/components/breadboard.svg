@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" width="360" height="220">
+  <rect width="360" height="220" fill="#1a1a2e"/>
+
+  <!-- Breadboard body -->
+  <rect x="30" y="35" width="300" height="150" rx="6" fill="#eee8c8" stroke="#ccc" stroke-width="2"/>
+
+  <!-- Top power rail (red) -->
+  <rect x="38" y="42" width="284" height="20" rx="3" fill="#ffdddd" stroke="#ffaaaa" stroke-width="1"/>
+  <text x="48" y="55" font-family="monospace" font-size="8" fill="#cc0000">+</text>
+  <!-- Top power holes -->
+  <g fill="#888">
+    <circle cx="62" cy="52" r="3.5"/>  <circle cx="76" cy="52" r="3.5"/>  <circle cx="90" cy="52" r="3.5"/>
+    <circle cx="104" cy="52" r="3.5"/> <circle cx="118" cy="52" r="3.5"/> <circle cx="132" cy="52" r="3.5"/>
+    <circle cx="146" cy="52" r="3.5"/> <circle cx="160" cy="52" r="3.5"/> <circle cx="174" cy="52" r="3.5"/>
+    <circle cx="188" cy="52" r="3.5"/> <circle cx="202" cy="52" r="3.5"/> <circle cx="216" cy="52" r="3.5"/>
+    <circle cx="230" cy="52" r="3.5"/> <circle cx="244" cy="52" r="3.5"/> <circle cx="258" cy="52" r="3.5"/>
+    <circle cx="272" cy="52" r="3.5"/> <circle cx="286" cy="52" r="3.5"/> <circle cx="300" cy="52" r="3.5"/>
+  </g>
+  <!-- Top ground rail (blue) -->
+  <rect x="38" y="66" width="284" height="20" rx="3" fill="#ddeeff" stroke="#aaccff" stroke-width="1"/>
+  <text x="48" y="79" font-family="monospace" font-size="8" fill="#0044cc">−</text>
+  <g fill="#888">
+    <circle cx="62" cy="76" r="3.5"/>  <circle cx="76" cy="76" r="3.5"/>  <circle cx="90" cy="76" r="3.5"/>
+    <circle cx="104" cy="76" r="3.5"/> <circle cx="118" cy="76" r="3.5"/> <circle cx="132" cy="76" r="3.5"/>
+    <circle cx="146" cy="76" r="3.5"/> <circle cx="160" cy="76" r="3.5"/> <circle cx="174" cy="76" r="3.5"/>
+    <circle cx="188" cy="76" r="3.5"/> <circle cx="202" cy="76" r="3.5"/> <circle cx="216" cy="76" r="3.5"/>
+    <circle cx="230" cy="76" r="3.5"/> <circle cx="244" cy="76" r="3.5"/> <circle cx="258" cy="76" r="3.5"/>
+    <circle cx="272" cy="76" r="3.5"/> <circle cx="286" cy="76" r="3.5"/> <circle cx="300" cy="76" r="3.5"/>
+  </g>
+
+  <!-- Main tie-point area — top half (rows a-e) -->
+  <g fill="#888">
+    <!-- Row a -->
+    <circle cx="62" cy="96" r="3.5"/>  <circle cx="76" cy="96" r="3.5"/>  <circle cx="90" cy="96" r="3.5"/>
+    <circle cx="104" cy="96" r="3.5"/> <circle cx="118" cy="96" r="3.5"/> <circle cx="132" cy="96" r="3.5"/>
+    <circle cx="146" cy="96" r="3.5"/> <circle cx="160" cy="96" r="3.5"/> <circle cx="174" cy="96" r="3.5"/>
+    <circle cx="188" cy="96" r="3.5"/> <circle cx="202" cy="96" r="3.5"/> <circle cx="216" cy="96" r="3.5"/>
+    <!-- Row b -->
+    <circle cx="62" cy="108" r="3.5"/>  <circle cx="76" cy="108" r="3.5"/>  <circle cx="90" cy="108" r="3.5"/>
+    <circle cx="104" cy="108" r="3.5"/> <circle cx="118" cy="108" r="3.5"/> <circle cx="132" cy="108" r="3.5"/>
+    <circle cx="146" cy="108" r="3.5"/> <circle cx="160" cy="108" r="3.5"/> <circle cx="174" cy="108" r="3.5"/>
+    <circle cx="188" cy="108" r="3.5"/> <circle cx="202" cy="108" r="3.5"/> <circle cx="216" cy="108" r="3.5"/>
+    <!-- Row c -->
+    <circle cx="62" cy="120" r="3.5"/>  <circle cx="76" cy="120" r="3.5"/>  <circle cx="90" cy="120" r="3.5"/>
+    <circle cx="104" cy="120" r="3.5"/> <circle cx="118" cy="120" r="3.5"/> <circle cx="132" cy="120" r="3.5"/>
+    <circle cx="146" cy="120" r="3.5"/> <circle cx="160" cy="120" r="3.5"/> <circle cx="174" cy="120" r="3.5"/>
+    <circle cx="188" cy="120" r="3.5"/> <circle cx="202" cy="120" r="3.5"/> <circle cx="216" cy="120" r="3.5"/>
+  </g>
+
+  <!-- Centre gap -->
+  <rect x="38" y="129" width="284" height="8" rx="0" fill="#d4c89a"/>
+  <text x="185" y="136" font-family="monospace" font-size="7" fill="#888" text-anchor="middle">— gap —</text>
+
+  <!-- Main tie-point area — bottom half (rows f-j) -->
+  <g fill="#888">
+    <!-- Row f -->
+    <circle cx="62" cy="143" r="3.5"/>  <circle cx="76" cy="143" r="3.5"/>  <circle cx="90" cy="143" r="3.5"/>
+    <circle cx="104" cy="143" r="3.5"/> <circle cx="118" cy="143" r="3.5"/> <circle cx="132" cy="143" r="3.5"/>
+    <circle cx="146" cy="143" r="3.5"/> <circle cx="160" cy="143" r="3.5"/> <circle cx="174" cy="143" r="3.5"/>
+    <circle cx="188" cy="143" r="3.5"/> <circle cx="202" cy="143" r="3.5"/> <circle cx="216" cy="143" r="3.5"/>
+    <!-- Row g -->
+    <circle cx="62" cy="155" r="3.5"/>  <circle cx="76" cy="155" r="3.5"/>  <circle cx="90" cy="155" r="3.5"/>
+    <circle cx="104" cy="155" r="3.5"/> <circle cx="118" cy="155" r="3.5"/> <circle cx="132" cy="155" r="3.5"/>
+    <circle cx="146" cy="155" r="3.5"/> <circle cx="160" cy="155" r="3.5"/> <circle cx="174" cy="155" r="3.5"/>
+    <circle cx="188" cy="155" r="3.5"/> <circle cx="202" cy="155" r="3.5"/> <circle cx="216" cy="155" r="3.5"/>
+  </g>
+
+  <!-- Row labels -->
+  <text x="42" y="99"  font-family="monospace" font-size="7" fill="#888">a</text>
+  <text x="42" y="111" font-family="monospace" font-size="7" fill="#888">b</text>
+  <text x="42" y="123" font-family="monospace" font-size="7" fill="#888">c</text>
+  <text x="42" y="146" font-family="monospace" font-size="7" fill="#888">f</text>
+  <text x="42" y="158" font-family="monospace" font-size="7" fill="#888">g</text>
+
+  <!-- Horizontal connection arrows for power rail -->
+  <line x1="38" y1="200" x2="322" y2="200" stroke="#ffaaaa" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="180" y="212" font-family="monospace" font-size="8" fill="#ffaaaa" text-anchor="middle">power rails connected along full length</text>
+
+  <!-- Title -->
+  <text x="180" y="16" font-family="sans-serif" font-size="10" fill="#e94560" text-anchor="middle" font-weight="bold">Breadboard — zyron.co.za</text>
+  <text x="180" y="28" font-family="sans-serif" font-size="9" fill="#888" text-anchor="middle">Each row (a–e, f–j) connected horizontally · rails run full length</text>
+</svg>

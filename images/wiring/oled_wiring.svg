@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" width="480" height="270">
+  <rect width="480" height="270" fill="#0f0f1a"/>
+
+  <!-- ESP32 -->
+  <rect x="30" y="50" width="80" height="170" rx="5" fill="#1a6b1a" stroke="#2d8a2d" stroke-width="1.5"/>
+  <text x="70" y="70" font-family="monospace" font-size="9" fill="#fff" text-anchor="middle" font-weight="bold">ESP32</text>
+  <rect x="108" y="80"  width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="108" y="100" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="108" y="120" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="108" y="140" width="12" height="7" rx="1" fill="#d4af37"/>
+  <text x="106" y="87"  font-family="monospace" font-size="7.5" fill="#e94560" text-anchor="end">3.3V</text>
+  <text x="106" y="107" font-family="monospace" font-size="7.5" fill="#5599ff" text-anchor="end">GND</text>
+  <text x="106" y="127" font-family="monospace" font-size="7.5" fill="#ffcc00" text-anchor="end">GPIO22 SCL</text>
+  <text x="106" y="147" font-family="monospace" font-size="7.5" fill="#aaffaa" text-anchor="end">GPIO21 SDA</text>
+
+  <!-- OLED module -->
+  <rect x="320" y="60" width="130" height="110" rx="5" fill="#1a1a8a" stroke="#3333cc" stroke-width="1.5"/>
+  <!-- Screen -->
+  <rect x="330" y="68" width="110" height="60" rx="3" fill="#000"/>
+  <!-- Content on screen -->
+  <text x="385" y="88" font-family="monospace" font-size="8" fill="#fff" text-anchor="middle" font-weight="bold">Zyron ESP32</text>
+  <line x1="332" y1="94" x2="438" y2="94" stroke="#444" stroke-width="0.5"/>
+  <text x="385" y="104" font-family="monospace" font-size="7" fill="#ccc" text-anchor="middle">23.4°C  56%RH</text>
+  <text x="385" y="116" font-family="monospace" font-size="7" fill="#888" text-anchor="middle">zyron.co.za</text>
+
+  <!-- OLED pins -->
+  <rect x="334" y="170" width="7" height="20" rx="1" fill="#aaa"/>
+  <rect x="354" y="170" width="7" height="20" rx="1" fill="#aaa"/>
+  <rect x="374" y="170" width="7" height="20" rx="1" fill="#aaa"/>
+  <rect x="394" y="170" width="7" height="20" rx="1" fill="#aaa"/>
+  <text x="337" y="203" font-family="monospace" font-size="8" fill="#e94560" text-anchor="middle">VCC</text>
+  <text x="357" y="203" font-family="monospace" font-size="8" fill="#5599ff" text-anchor="middle">GND</text>
+  <text x="377" y="203" font-family="monospace" font-size="8" fill="#ffcc00" text-anchor="middle">SCL</text>
+  <text x="397" y="203" font-family="monospace" font-size="8" fill="#aaffaa" text-anchor="middle">SDA</text>
+
+  <!-- Wires -->
+  <!-- 3.3V → VCC (red) -->
+  <polyline points="120,83 200,83 200,50 337,50 337,170" fill="none" stroke="#e94560" stroke-width="2.5"/>
+  <!-- GND → GND (blue) -->
+  <polyline points="120,103 357,103 357,170" fill="none" stroke="#5599ff" stroke-width="2.5"/>
+  <!-- SCL GPIO22 (yellow) -->
+  <polyline points="120,123 377,123 377,170" fill="none" stroke="#ffcc00" stroke-width="2.5"/>
+  <!-- SDA GPIO21 (green) -->
+  <polyline points="120,143 397,143 397,170" fill="none" stroke="#aaffaa" stroke-width="2.5"/>
+
+  <!-- I2C label -->
+  <rect x="185" y="56" width="100" height="36" rx="4" fill="#1a1a2e" stroke="#ffcc00"/>
+  <text x="235" y="69" font-family="monospace" font-size="8" fill="#ffcc00" text-anchor="middle">I²C Bus</text>
+  <text x="235" y="80" font-family="monospace" font-size="7.5" fill="#aaa" text-anchor="middle">SCL + SDA shared</text>
+  <text x="235" y="89" font-family="monospace" font-size="7.5" fill="#888" text-anchor="middle">addr: 0x3C</text>
+
+  <!-- Footer -->
+  <rect x="30" y="225" width="420" height="30" rx="4" fill="#1a1a2e" stroke="#333"/>
+  <text x="240" y="237" font-family="sans-serif" font-size="9" fill="#aaffaa" text-anchor="middle">3.3V → VCC  |  GND → GND  |  GPIO22 → SCL  |  GPIO21 → SDA</text>
+  <text x="240" y="250" font-family="monospace" font-size="8" fill="#888" text-anchor="middle">If nothing shows: run I²C scanner to check address (0x3C or 0x3D)</text>
+
+  <!-- Title -->
+  <text x="240" y="20" font-family="sans-serif" font-size="11" fill="#e94560" text-anchor="middle" font-weight="bold">SSD1306 OLED Wiring — Zyron ESP32 Starter Kit</text>
+  <text x="240" y="34" font-family="sans-serif" font-size="9" fill="#888" text-anchor="middle">zyron.co.za</text>
+</svg>

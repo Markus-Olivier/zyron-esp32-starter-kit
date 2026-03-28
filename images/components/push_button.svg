@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 220" width="280" height="220">
+  <rect width="280" height="220" fill="#1a1a2e"/>
+
+  <!-- Button base -->
+  <rect x="85" y="80" width="110" height="70" rx="4" fill="#555" stroke="#777" stroke-width="1.5"/>
+
+  <!-- Button cap -->
+  <rect x="95" y="60" width="90" height="50" rx="6" fill="#cc3333" stroke="#aa1111" stroke-width="2"/>
+  <rect x="100" y="65" width="80" height="40" rx="4" fill="#dd4444"/>
+  <!-- Highlight on cap -->
+  <rect x="103" y="67" width="30" height="8" rx="2" fill="#ee6666" opacity="0.5"/>
+
+  <!-- Button label -->
+  <text x="140" y="92" font-family="monospace" font-size="11" fill="white" text-anchor="middle" font-weight="bold">PUSH</text>
+
+  <!-- 4 legs -->
+  <rect x="95"  y="150" width="7" height="30" rx="1" fill="#d4af37"/>
+  <rect x="115" y="150" width="7" height="30" rx="1" fill="#d4af37"/>
+  <rect x="158" y="150" width="7" height="30" rx="1" fill="#d4af37"/>
+  <rect x="178" y="150" width="7" height="30" rx="1" fill="#d4af37"/>
+
+  <!-- Leg labels -->
+  <text x="99"  y="194" font-family="monospace" font-size="8" fill="#aaa" text-anchor="middle">A</text>
+  <text x="119" y="194" font-family="monospace" font-size="8" fill="#aaa" text-anchor="middle">A</text>
+  <text x="162" y="194" font-family="monospace" font-size="8" fill="#aaa" text-anchor="middle">B</text>
+  <text x="182" y="194" font-family="monospace" font-size="8" fill="#aaa" text-anchor="middle">B</text>
+
+  <!-- Breadboard gap indicator -->
+  <line x1="139" y1="148" x2="139" y2="200" stroke="#ffcc00" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="139" y="206" font-family="monospace" font-size="7" fill="#ffcc00" text-anchor="middle">centre gap</text>
+
+  <!-- Internal connection arrows -->
+  <path d="M99 175 L119 175" stroke="#888" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <path d="M162 175 L182 175" stroke="#888" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+  <!-- Press activates label -->
+  <text x="140" y="160" font-family="monospace" font-size="8" fill="#888" text-anchor="middle">A─A  B─B (always)</text>
+  <text x="140" y="170" font-family="monospace" font-size="8" fill="#ffcc00" text-anchor="middle">Press → A connects to B</text>
+
+  <!-- Title -->
+  <text x="140" y="15" font-family="sans-serif" font-size="10" fill="#e94560" text-anchor="middle" font-weight="bold">Tactile Push Button — zyron.co.za</text>
+  <text x="140" y="28" font-family="sans-serif" font-size="9" fill="#888" text-anchor="middle">Momentary · use INPUT_PULLUP · debounce in code</text>
+</svg>

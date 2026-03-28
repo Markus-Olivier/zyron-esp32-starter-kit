@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" width="320" height="240">
+  <rect width="320" height="240" fill="#1a1a2e"/>
+
+  <!-- PCB body -->
+  <rect x="95" y="100" width="130" height="90" rx="5" fill="#cc6600" stroke="#ee8800" stroke-width="1.5"/>
+
+  <!-- White dome (Fresnel lens) -->
+  <ellipse cx="160" cy="100" rx="55" ry="55" fill="#f0f0f0" stroke="#ccc" stroke-width="2"/>
+  <ellipse cx="160" cy="100" rx="48" ry="48" fill="#e8e8e8"/>
+  <!-- Fresnel lens rings -->
+  <ellipse cx="160" cy="100" rx="40" ry="40" fill="none" stroke="#ccc" stroke-width="1.2" opacity="0.6"/>
+  <ellipse cx="160" cy="100" rx="30" ry="30" fill="none" stroke="#ccc" stroke-width="1.2" opacity="0.6"/>
+  <ellipse cx="160" cy="100" rx="20" ry="20" fill="none" stroke="#ccc" stroke-width="1.2" opacity="0.6"/>
+  <ellipse cx="160" cy="100" rx="10" ry="10" fill="none" stroke="#ccc" stroke-width="1.2" opacity="0.6"/>
+  <!-- Radial lines -->
+  <g stroke="#ccc" stroke-width="0.8" opacity="0.4">
+    <line x1="160" y1="52" x2="160" y2="148"/>
+    <line x1="112" y1="100" x2="208" y2="100"/>
+    <line x1="126" y1="66" x2="194" y2="134"/>
+    <line x1="126" y1="134" x2="194" y2="66"/>
+  </g>
+
+  <!-- Pots on PCB -->
+  <circle cx="120" cy="140" r="10" fill="#333" stroke="#666" stroke-width="1"/>
+  <line x1="120" y1="133" x2="120" y2="137" stroke="#aaa" stroke-width="2"/>
+  <text x="120" y="163" font-family="monospace" font-size="7" fill="#ffcc00" text-anchor="middle">SENS</text>
+
+  <circle cx="200" cy="140" r="10" fill="#333" stroke="#666" stroke-width="1"/>
+  <line x1="200" y1="133" x2="200" y2="137" stroke="#aaa" stroke-width="2"/>
+  <text x="200" y="163" font-family="monospace" font-size="7" fill="#ffcc00" text-anchor="middle">TIME</text>
+
+  <!-- Jumper -->
+  <rect x="150" y="155" width="20" height="10" rx="2" fill="#555" stroke="#888"/>
+  <rect x="153" y="157" width="14" height="6" rx="1" fill="#ffcc00"/>
+  <text x="160" y="178" font-family="monospace" font-size="7" fill="#ffcc00" text-anchor="middle">H/L</text>
+
+  <!-- Pins -->
+  <rect x="113" y="190" width="8" height="28" rx="1" fill="#aaa"/>
+  <rect x="156" y="190" width="8" height="28" rx="1" fill="#aaa"/>
+  <rect x="199" y="190" width="8" height="28" rx="1" fill="#aaa"/>
+
+  <!-- Pin labels -->
+  <text x="117" y="230" font-family="monospace" font-size="9" fill="#e94560" text-anchor="middle">VCC</text>
+  <text x="160" y="230" font-family="monospace" font-size="9" fill="#aaffaa" text-anchor="middle">OUT</text>
+  <text x="203" y="230" font-family="monospace" font-size="9" fill="#5599ff" text-anchor="middle">GND</text>
+
+  <!-- Title -->
+  <text x="160" y="14" font-family="sans-serif" font-size="10" fill="#e94560" text-anchor="middle" font-weight="bold">HC-SR501 PIR Motion Sensor — zyron.co.za</text>
+  <text x="160" y="28" font-family="sans-serif" font-size="9" fill="#888" text-anchor="middle">30–60s warm-up · 3–7m range · 100° FOV</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" width="360" height="220">
+  <rect width="360" height="220" fill="#1a1a2e"/>
+
+  <!-- 10kΩ resistor -->
+  <line x1="40" y1="75" x2="75" y2="75" stroke="#d4af37" stroke-width="3"/>
+  <rect x="75" y="60" width="100" height="30" rx="8" fill="#d4a847"/>
+  <!-- bands: Brown Black Orange Gold -->
+  <rect x="82"  y="60" width="10" height="30" rx="1" fill="#8B4513"/>
+  <rect x="96"  y="60" width="10" height="30" rx="1" fill="#111"/>
+  <rect x="110" y="60" width="10" height="30" rx="1" fill="#ff8800"/>
+  <rect x="156" y="60" width="10" height="30" rx="1" fill="#d4af37"/>
+  <line x1="175" y1="75" x2="210" y2="75" stroke="#d4af37" stroke-width="3"/>
+  <text x="125" y="107" font-family="monospace" font-size="10" fill="#ffcc00" text-anchor="middle">10kΩ</text>
+  <text x="125" y="119" font-family="monospace" font-size="8" fill="#888" text-anchor="middle">Brn-Blk-Org-Gld</text>
+  <text x="125" y="130" font-family="monospace" font-size="8" fill="#888" text-anchor="middle">DHT22 pull-up / LDR</text>
+
+  <!-- 1kΩ resistor -->
+  <line x1="40" y1="165" x2="75" y2="165" stroke="#d4af37" stroke-width="3"/>
+  <rect x="75" y="150" width="100" height="30" rx="8" fill="#d4a847"/>
+  <!-- bands: Brown Black Red Gold -->
+  <rect x="82"  y="150" width="10" height="30" rx="1" fill="#8B4513"/>
+  <rect x="96"  y="150" width="10" height="30" rx="1" fill="#111"/>
+  <rect x="110" y="150" width="10" height="30" rx="1" fill="#cc0000"/>
+  <rect x="156" y="150" width="10" height="30" rx="1" fill="#d4af37"/>
+  <line x1="175" y1="165" x2="210" y2="165" stroke="#d4af37" stroke-width="3"/>
+  <text x="125" y="197" font-family="monospace" font-size="10" fill="#ffcc00" text-anchor="middle">1kΩ</text>
+  <text x="125" y="209" font-family="monospace" font-size="8" fill="#888" text-anchor="middle">Brn-Blk-Red-Gld</text>
+
+  <!-- 220Ω resistor -->
+  <line x1="220" y1="75" x2="255" y2="75" stroke="#d4af37" stroke-width="3"/>
+  <rect x="255" y="60" width="100" height="30" rx="8" fill="#d4a847"/>
+  <!-- bands: Red Red Brown Gold -->
+  <rect x="262" y="60" width="10" height="30" rx="1" fill="#cc0000"/>
+  <rect x="276" y="60" width="10" height="30" rx="1" fill="#cc0000"/>
+  <rect x="290" y="60" width="10" height="30" rx="1" fill="#8B4513"/>
+  <rect x="336" y="60" width="10" height="30" rx="1" fill="#d4af37"/>
+  <line x1="355" y1="75" x2="360" y2="75" stroke="#d4af37" stroke-width="3"/>
+  <text x="305" y="107" font-family="monospace" font-size="10" fill="#ffcc00" text-anchor="middle">220Ω</text>
+  <text x="305" y="119" font-family="monospace" font-size="8" fill="#888" text-anchor="middle">Red-Red-Brn-Gld</text>
+  <text x="305" y="130" font-family="monospace" font-size="8" fill="#888" text-anchor="middle">LED current limit</text>
+
+  <!-- 2kΩ resistor -->
+  <line x1="220" y1="165" x2="255" y2="165" stroke="#d4af37" stroke-width="3"/>
+  <rect x="255" y="150" width="100" height="30" rx="8" fill="#d4a847"/>
+  <!-- bands: Red Black Red Gold -->
+  <rect x="262" y="150" width="10" height="30" rx="1" fill="#cc0000"/>
+  <rect x="276" y="150" width="10" height="30" rx="1" fill="#111"/>
+  <rect x="290" y="150" width="10" height="30" rx="1" fill="#cc0000"/>
+  <rect x="336" y="150" width="10" height="30" rx="1" fill="#d4af37"/>
+  <line x1="355" y1="165" x2="360" y2="165" stroke="#d4af37" stroke-width="3"/>
+  <text x="305" y="197" font-family="monospace" font-size="10" fill="#ffcc00" text-anchor="middle">2kΩ</text>
+  <text x="305" y="209" font-family="monospace" font-size="8" fill="#888" text-anchor="middle">HC-SR04 divider</text>
+
+  <!-- Title -->
+  <text x="180" y="16" font-family="sans-serif" font-size="10" fill="#e94560" text-anchor="middle" font-weight="bold">Resistors — zyron.co.za</text>
+  <text x="180" y="28" font-family="sans-serif" font-size="8" fill="#888" text-anchor="middle">4-band · Gold = ±5% tolerance</text>
+</svg>

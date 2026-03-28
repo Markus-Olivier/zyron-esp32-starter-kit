@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="320" height="220">
+  <rect width="320" height="220" fill="#1a1a2e"/>
+
+  <!-- LDR body (disc) -->
+  <ellipse cx="160" cy="95" rx="58" ry="58" fill="#e8c840" stroke="#c0a020" stroke-width="3"/>
+  <ellipse cx="160" cy="95" rx="50" ry="50" fill="#d4b030"/>
+
+  <!-- Photosensitive zigzag element -->
+  <path d="M125 80 L135 80 L135 88 L145 88 L145 80 L155 80 L155 95 L165 95 L165 80 L175 80 L175 88 L185 88 L185 80 L195 80"
+        fill="none" stroke="#555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M125 102 L135 102 L135 110 L145 110 L145 102 L155 102 L155 115 L165 115 L165 102 L175 102 L175 110 L185 110 L185 102 L195 102"
+        fill="none" stroke="#555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Leg 1 -->
+  <rect x="128" y="150" width="8" height="38" rx="2" fill="#aaa"/>
+  <!-- Leg 2 -->
+  <rect x="184" y="150" width="8" height="38" rx="2" fill="#aaa"/>
+
+  <!-- No polarity marker -->
+  <text x="160" y="135" font-family="monospace" font-size="8" fill="#555" text-anchor="middle">LDR / CdS</text>
+
+  <!-- Labels -->
+  <text x="132" y="200" font-family="monospace" font-size="9" fill="#aaa" text-anchor="middle">Leg 1</text>
+  <text x="188" y="200" font-family="monospace" font-size="9" fill="#aaa" text-anchor="middle">Leg 2</text>
+  <text x="160" y="210" font-family="monospace" font-size="8" fill="#888" text-anchor="middle">(no polarity)</text>
+
+  <!-- Light arrows -->
+  <g fill="#ffee00" opacity="0.8">
+    <polygon points="55,40 65,55 50,55"/>
+    <line x1="60" y1="55" x2="60" y2="80" stroke="#ffee00" stroke-width="2"/>
+    <polygon points="85,25 95,40 80,40"/>
+    <line x1="87" y1="40" x2="87" y2="65" stroke="#ffee00" stroke-width="2"/>
+  </g>
+  <text x="58" y="20" font-family="sans-serif" font-size="9" fill="#ffee00">light</text>
+
+  <!-- Title -->
+  <text x="160" y="15" font-family="sans-serif" font-size="10" fill="#e94560" text-anchor="middle" font-weight="bold">LDR — Light Dependent Resistor — zyron.co.za</text>
+  <text x="160" y="27" font-family="sans-serif" font-size="9" fill="#888" text-anchor="middle">Bright → low resistance · Dark → high resistance</text>
+</svg>

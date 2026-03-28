@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="500" height="300">
+  <rect width="500" height="300" fill="#0f0f1a"/>
+
+  <!-- ESP32 (left) -->
+  <rect x="30" y="60" width="80" height="180" rx="5" fill="#1a6b1a" stroke="#2d8a2d" stroke-width="1.5"/>
+  <text x="70" y="80" font-family="monospace" font-size="9" fill="#fff" text-anchor="middle" font-weight="bold">ESP32</text>
+  <!-- Pins on right side of ESP32 -->
+  <rect x="108" y="90"  width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="108" y="108" width="12" height="7" rx="1" fill="#d4af37"/>
+  <rect x="108" y="126" width="12" height="7" rx="1" fill="#d4af37"/>
+  <!-- Pin labels -->
+  <text x="106" y="97"  font-family="monospace" font-size="7.5" fill="#e94560" text-anchor="end">3.3V</text>
+  <text x="106" y="115" font-family="monospace" font-size="7.5" fill="#aaffaa" text-anchor="end">GPIO4</text>
+  <text x="106" y="133" font-family="monospace" font-size="7.5" fill="#5599ff" text-anchor="end">GND</text>
+
+  <!-- DHT22 (right) -->
+  <rect x="360" y="80" width="100" height="80" rx="6" fill="#e0e0e0" stroke="#bbb" stroke-width="1.5"/>
+  <!-- Mesh -->
+  <rect x="368" y="86" width="84" height="50" rx="3" fill="#ccc"/>
+  <g stroke="#aaa" stroke-width="0.7">
+    <line x1="376" y1="86" x2="376" y2="136"/>
+    <line x1="388" y1="86" x2="388" y2="136"/>
+    <line x1="400" y1="86" x2="400" y2="136"/>
+    <line x1="412" y1="86" x2="412" y2="136"/>
+    <line x1="424" y1="86" x2="424" y2="136"/>
+    <line x1="436" y1="86" x2="436" y2="136"/>
+    <line x1="448" y1="86" x2="448" y2="136"/>
+    <line x1="368" y1="100" x2="452" y2="100"/>
+    <line x1="368" y1="115" x2="452" y2="115"/>
+    <line x1="368" y1="130" x2="452" y2="130"/>
+  </g>
+  <text x="410" y="152" font-family="monospace" font-size="9" fill="#333" text-anchor="middle" font-weight="bold">DHT22</text>
+  <!-- DHT22 pins -->
+  <rect x="374" y="160" width="7" height="22" rx="1" fill="#aaa"/>
+  <rect x="394" y="160" width="7" height="22" rx="1" fill="#aaa"/>
+  <rect x="414" y="160" width="7" height="22" rx="1" fill="#aaa"/>
+  <text x="377" y="194" font-family="monospace" font-size="8" fill="#e94560" text-anchor="middle">VCC</text>
+  <text x="397" y="194" font-family="monospace" font-size="8" fill="#aaffaa" text-anchor="middle">DATA</text>
+  <text x="417" y="194" font-family="monospace" font-size="8" fill="#5599ff" text-anchor="middle">GND</text>
+
+  <!-- Pull-up resistor -->
+  <rect x="248" y="74" width="54" height="20" rx="6" fill="#d4a847"/>
+  <rect x="254" y="74" width="8" height="20" rx="1" fill="#8B4513"/>
+  <rect x="270" y="74" width="8" height="20" rx="1" fill="#111"/>
+  <rect x="286" y="74" width="8" height="20" rx="1" fill="#ff8800"/>
+  <rect x="298" y="74" width="8" height="20" rx="1" fill="#d4af37"/>
+  <text x="275" y="68" font-family="monospace" font-size="8" fill="#ffcc00" text-anchor="middle">10kΩ pull-up</text>
+
+  <!-- Wires -->
+  <!-- 3.3V → VCC (red) -->
+  <polyline points="120,93 200,93 200,55 377,55 377,160" fill="none" stroke="#e94560" stroke-width="2.5"/>
+  <!-- Pull-up junction from 3.3V line -->
+  <polyline points="200,55 275,55 275,74" fill="none" stroke="#e94560" stroke-width="2.5"/>
+  <circle cx="200" cy="55" r="4" fill="#e94560"/>
+
+  <!-- Pull-up to DATA (orange) -->
+  <polyline points="275,94 275,115 397,115 397,160" fill="none" stroke="#ff8800" stroke-width="2" stroke-dasharray="5,3"/>
+
+  <!-- GPIO4 → DATA (green) -->
+  <polyline points="120,111 220,111 220,130 397,130 397,160" fill="none" stroke="#aaffaa" stroke-width="2.5"/>
+
+  <!-- GND → GND (blue) -->
+  <polyline points="120,129 240,129 240,215 417,215 417,182" fill="none" stroke="#5599ff" stroke-width="2.5"/>
+
+  <!-- Labels on wires -->
+  <text x="165" y="88" font-family="monospace" font-size="8" fill="#e94560">3.3V</text>
+  <text x="165" y="107" font-family="monospace" font-size="8" fill="#aaffaa">DATA</text>
+  <text x="165" y="124" font-family="monospace" font-size="8" fill="#5599ff">GND</text>
+
+  <!-- Note -->
+  <rect x="30" y="258" width="440" height="30" rx="4" fill="#1a1a2e" stroke="#333"/>
+  <text x="250" y="270" font-family="sans-serif" font-size="9" fill="#ffcc00" text-anchor="middle">⚠ Most DHT22 breakout modules have the 10kΩ pull-up built in — check your module first</text>
+  <text x="250" y="283" font-family="monospace" font-size="8" fill="#888" text-anchor="middle">DHT22 VCC → 3.3V  |  DATA → GPIO 4  |  GND → GND</text>
+
+  <!-- Title -->
+  <text x="250" y="22" font-family="sans-serif" font-size="11" fill="#e94560" text-anchor="middle" font-weight="bold">DHT22 Wiring — Zyron ESP32 Starter Kit</text>
+  <text x="250" y="37" font-family="sans-serif" font-size="9" fill="#888" text-anchor="middle">zyron.co.za</text>
+</svg>

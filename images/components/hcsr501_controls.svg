@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300">
+  <rect width="480" height="300" fill="#0f0f1a"/>
+
+  <!-- Title -->
+  <text x="240" y="22" font-family="sans-serif" font-size="11" fill="#e94560" text-anchor="middle" font-weight="bold">HC-SR501 PIR — Adjustment Controls</text>
+  <text x="240" y="36" font-family="sans-serif" font-size="9" fill="#888" text-anchor="middle">zyron.co.za</text>
+
+  <!-- PCB -->
+  <rect x="100" y="55" width="280" height="160" rx="6" fill="#cc6600" stroke="#ee8800" stroke-width="2"/>
+
+  <!-- Dome (fresnel lens) -->
+  <ellipse cx="240" cy="115" rx="60" ry="60" fill="#f0f0f0" stroke="#ccc" stroke-width="2"/>
+  <ellipse cx="240" cy="115" rx="48" ry="48" fill="#e8e8e8"/>
+  <ellipse cx="240" cy="115" rx="32" ry="32" fill="none" stroke="#ccc" stroke-width="1"/>
+  <ellipse cx="240" cy="115" rx="16" ry="16" fill="none" stroke="#ccc" stroke-width="1"/>
+  <text x="240" y="60" font-family="monospace" font-size="9" fill="#555" text-anchor="middle">PIR Dome (Fresnel Lens)</text>
+
+  <!-- Sensitivity pot (left) -->
+  <circle cx="140" cy="160" r="16" fill="#222" stroke="#555" stroke-width="2"/>
+  <circle cx="140" cy="160" r="9" fill="#444"/>
+  <line x1="140" y1="150" x2="140" y2="145" stroke="#aaa" stroke-width="2" stroke-linecap="round"/>
+  <!-- Arrow min/max -->
+  <text x="110" y="180" font-family="monospace" font-size="7" fill="#888">MIN</text>
+  <text x="155" y="180" font-family="monospace" font-size="7" fill="#888">MAX</text>
+
+  <!-- Time-delay pot (right) -->
+  <circle cx="340" cy="160" r="16" fill="#222" stroke="#555" stroke-width="2"/>
+  <circle cx="340" cy="160" r="9" fill="#444"/>
+  <line x1="340" y1="150" x2="340" y2="145" stroke="#aaa" stroke-width="2" stroke-linecap="round"/>
+  <text x="310" y="180" font-family="monospace" font-size="7" fill="#888">MIN</text>
+  <text x="355" y="180" font-family="monospace" font-size="7" fill="#888">MAX</text>
+
+  <!-- Jumper block -->
+  <rect x="192" y="186" width="56" height="20" rx="2" fill="#333" stroke="#555"/>
+  <rect x="196" y="189" width="18" height="14" rx="2" fill="#555"/>
+  <rect x="218" y="189" width="18" height="14" rx="2" fill="#555"/>
+  <rect x="196" y="189" width="18" height="14" rx="2" fill="none" stroke="#888" stroke-width="1"/>
+  <!-- Jumper cap on left (L mode) -->
+  <rect x="197" y="190" width="16" height="12" rx="2" fill="#ffcc00" opacity="0.8"/>
+  <text x="220" y="202" font-family="monospace" font-size="7" fill="#aaa">H</text>
+  <text x="200" y="202" font-family="monospace" font-size="7" fill="#333" text-anchor="middle">L</text>
+
+  <!-- Pins at bottom -->
+  <rect x="170" y="210" width="7" height="22" rx="1" fill="#aaa"/>
+  <rect x="233" y="210" width="7" height="22" rx="1" fill="#aaa"/>
+  <rect x="296" y="210" width="7" height="22" rx="1" fill="#aaa"/>
+  <text x="173" y="245" font-family="monospace" font-size="9" fill="#e94560" text-anchor="middle">VCC</text>
+  <text x="236" y="245" font-family="monospace" font-size="9" fill="#aaffaa" text-anchor="middle">OUT</text>
+  <text x="299" y="245" font-family="monospace" font-size="9" fill="#5599ff" text-anchor="middle">GND</text>
+
+  <!-- Annotation lines -->
+  <!-- Sensitivity pot -->
+  <line x1="140" y1="144" x2="140" y2="88" stroke="#ff8800" stroke-width="1" stroke-dasharray="4,2"/>
+  <line x1="140" y1="88" x2="30" y2="88" stroke="#ff8800" stroke-width="1"/>
+  <rect x="0" y="77" width="28" height="22" rx="3" fill="#1a1a2e" stroke="#ff8800"/>
+  <text x="14" y="87" font-family="monospace" font-size="7" fill="#ff8800" text-anchor="middle">SENS</text>
+  <text x="14" y="97" font-family="monospace" font-size="6" fill="#888" text-anchor="middle">3m–7m</text>
+
+  <!-- Time-delay pot -->
+  <line x1="340" y1="144" x2="340" y2="88" stroke="#aaffaa" stroke-width="1" stroke-dasharray="4,2"/>
+  <line x1="340" y1="88" x2="450" y2="88" stroke="#aaffaa" stroke-width="1"/>
+  <rect x="452" y="77" width="28" height="22" rx="3" fill="#1a1a2e" stroke="#aaffaa"/>
+  <text x="466" y="87" font-family="monospace" font-size="7" fill="#aaffaa" text-anchor="middle">DELAY</text>
+  <text x="466" y="97" font-family="monospace" font-size="6" fill="#888" text-anchor="middle">3s–5min</text>
+
+  <!-- Jumper annotation -->
+  <line x1="220" y1="206" x2="220" y2="262" stroke="#ffcc00" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="220" y="274" font-family="monospace" font-size="8" fill="#ffcc00" text-anchor="middle">L = single-trigger  H = repeat-trigger</text>
+
+  <!-- Footer -->
+  <rect x="20" y="282" width="440" height="14" rx="3" fill="#1a1a2e" stroke="#333"/>
+  <text x="240" y="292" font-family="monospace" font-size="8" fill="#888" text-anchor="middle">VCC=5V  |  OUT=3.3V (safe for ESP32)  |  Allow 30–60s warm-up after power-on</text>
+</svg>
